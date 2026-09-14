@@ -1,0 +1,12 @@
+{
+  "name": "songwall-demo",
+  "version": "0.2.0",
+  "private": true,
+  "description": "弦外：通过知乎公开检索，按需整理歌曲讨论并比较不同表达",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "validate": "node --check dist/app.js && node --check scripts/serve.mjs && node --check scripts/search-service.mjs && node scripts/validate.mjs",
+    "prepare:data": "node scripts/count-keywords.mjs && node scripts/export-data.mjs",
+    "test": "node --test tests/search-service.test.mjs"
+  }
+}
