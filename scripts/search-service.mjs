@@ -2,10 +2,11 @@ import {readFile,writeFile,mkdir,readdir,rename} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {collectSources,extractiveDataset,applyGroundedAnalysis,parseModelOutput,publicDataset,songId,normalize} from './song-data.mjs';
 import {runCli,nextQuotaCycle} from './zhihu-provider.mjs';
+import {analysisConfig,analyseWithProviders,issueCode} from './analysis-provider.mjs';
 const root=new URL('../',import.meta.url);
 const read=async path=>JSON.parse(await readFile(path,'utf8'));
 const error=(code,message)=>Object.assign(Error(message),{code});
-export function createSearchService({provider=runCli,runtimeDir=new URL('../data/runtime/',import.meta.url),now=()=>Date.now()}={}){
+export function createSearchService({provider=runCli,runtimeDir=new URL('../data/runtime/',import.meta.url),now=()=>Date.now(),analysisOptions=analysisConfig(),backupProvider}={}){
  let catalog,quota,busy=false;const cache=new Map();let quotaPromise;
  async function load(){if(catalog)return;catalog=await read(new URL('data/catalog.json',root));await mkdir(runtimeDir,{recursive:true});try{quota=await read(new URL('availability.json',runtimeDir));}catch{quota={};}for(const name of await readdir(runtimeDir)){if(!/^song-[a-f0-9]{16}\.json$/.test(name))continue;try{const d=await read(new URL(name,runtimeDir));if(d.song&&d.sources?.length)cache.set(d.song.id,d);}catch{}}}
  async function persistQuota(){await writeFile(new URL('availability.json',runtimeDir),JSON.stringify(quota,null,2));}
@@ -16,20 +17,23 @@ export function createSearchService({provider=runCli,runtimeDir=new URL('../data
  async function getSong(id){await load();if(cache.has(id))return publicDataset(cache.get(id));const s=catalog.songs.find(s=>s.id===id);if(s?.path){const d=await read(new URL('dist/'+s.path,root));d.song.id=s.id;return d;}return null;}
  async function analyseAndSave(base,{signal,onProgress}){
   let data=extractiveDataset(base.song,base.sources,base.excluded||[],base.preparedAt),stage='request';const started=now();
-  onProgress({stage:'analysis',completed:3,total:4,message:'正在通过知乎直答整理观点，并校验原句…'});
   try{
-   if(quota.analysis?.remaining===0&&Date.parse(quota.analysis.resetAt)>now())throw error('ANALYSIS_QUOTA','分析额度用完');
    const prompt=await readFile(new URL('prompts/runtime-analysis.md',root),'utf8');
    const context=JSON.stringify({song:base.song,sources:base.sources.map(s=>({id:s.id,title:s.title,author:s.author,text:s.texts.find(t=>t.id===s.frequencyTextId).text.slice(0,2400)}))});
-   const answer=await provider(['answer','--model','zhida-fast-1p5','--query',prompt+'\n资料：\n'+context,'--timeout','100s'],{signal,timeout:100000});
-   stage='parse';const output=parseModelOutput(answer);stage='evidence';data=applyGroundedAnalysis(data,output);data.analysisNotice='';
+   const result=await analyseWithProviders(prompt+'\n资料：\n'+context,{config:analysisOptions,signal,onProgress,backup:backupProvider,
+    zhihu:async(query,options)=>{
+     if(quota.analysis?.remaining===0&&Date.parse(quota.analysis.resetAt)>now())throw error('ANALYSIS_QUOTA','分析额度用完');
+     return provider(['answer','--model','zhida-fast-1p5','--query',query,'--timeout',options.timeout+'ms'],options);
+    },
+    validate:answer=>{let output;try{output=parseModelOutput(answer);}catch{throw Object.assign(error('INVALID_JSON','分析格式不正确'),{stage:'parse'});}try{return applyGroundedAnalysis(data,output);}catch{throw Object.assign(error('INSUFFICIENT_EVIDENCE','原句校验不足'),{stage:'evidence'});}}
+   });
+   data=result.data;data.analysisEngine={...result.engine,completedAt:new Date(now()).toISOString()};data.analysisNotice='';
   }catch(e){
    if(signal?.aborted||e.code==='CANCELLED')throw e;
-   const known=['NETWORK_ERROR','TIMEOUT','AUTH_FAILED','AUTH_REQUIRED','KEYCHAIN_UNAVAILABLE','RATE_LIMITED','UPSTREAM_ERROR','INCOMPLETE_RESPONSE','EMPTY_RESPONSE','INVALID_RESPONSE','ANALYSIS_QUOTA'];
-   const code=known.includes(e.code)?e.code:e.code==='30001'?'RATE_LIMITED':stage==='parse'?'INVALID_JSON':stage==='evidence'?'INSUFFICIENT_EVIDENCE':'ANALYSIS_ERROR';
-   const messages={NETWORK_ERROR:'知乎直答连接失败',TIMEOUT:'知乎直答等待超时',AUTH_FAILED:'知乎直答认证未通过',AUTH_REQUIRED:'知乎直答认证未配置',KEYCHAIN_UNAVAILABLE:'本地钥匙串不可用',RATE_LIMITED:'知乎直答暂时限流或额度不足',ANALYSIS_QUOTA:'知乎直答额度不足',INVALID_JSON:'知乎直答的返回格式未通过校验',INSUFFICIENT_EVIDENCE:'返回的观点没有通过足够的原句校验',INCOMPLETE_RESPONSE:'知乎直答未完成生成',EMPTY_RESPONSE:'知乎直答没有返回分析正文'};
-   data.analysisIssue={code,stage,checkedAt:new Date(now()).toISOString(),retryAfter:new Date(now()+30000).toISOString()};
-   data.analysisNotice=(messages[code]||'知乎直答本次未完成分析')+'。已保留找到的来源，可稍后重新分析，无需重复检索。';
+   const code=issueCode(e);stage=e.stage||stage;
+   const messages={INVALID_REQUEST:'分析请求参数或模型不受支持，请检查配置',BILLING_ERROR:'分析平台账户余额不足',NOT_FOUND:'分析接口地址或模型不存在',NETWORK_ERROR:'分析服务连接失败',TIMEOUT:'分析服务等待超时',AUTH_FAILED:'分析服务认证未通过',AUTH_REQUIRED:'分析服务认证未配置',KEYCHAIN_UNAVAILABLE:'本地钥匙串不可用',RATE_LIMITED:'分析服务暂时限流或额度不足',ANALYSIS_QUOTA:'知乎直答额度不足',INVALID_JSON:'模型的返回格式未通过校验',INSUFFICIENT_EVIDENCE:'返回的观点没有通过足够的原句校验',INCOMPLETE_RESPONSE:'分析输出未完成或被截断',EMPTY_RESPONSE:'模型没有返回分析正文',BACKUP_CONFIG:'备用分析接口配置不完整，请由网站维护者检查'};
+   data.analysisIssue={code,stage,attempts:e.attempts||[],checkedAt:new Date(now()).toISOString(),retryAfter:new Date(now()+30000).toISOString()};
+   data.analysisNotice=(messages[code]||'分析服务本次未完成')+'。已保留找到的来源，可稍后重新分析，无需重复检索。';
    console.warn(JSON.stringify({event:'xianwai-analysis-failed',songId:base.song.id,stage,code,elapsedMs:now()-started}));
   }
   if(signal?.aborted)throw error('CANCELLED','已取消');
