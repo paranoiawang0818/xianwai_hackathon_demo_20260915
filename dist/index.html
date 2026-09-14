@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="搜索感兴趣的歌曲，通过有来源的关键词与观点对照，发现值得继续阅读的知乎文章和回答。">
+  <meta name="theme-color" content="#1769e8"><title>弦外 · 一首歌，不止一种听法</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231769e8'/%3E%3Cpath d='M8 13v6m5-12v18m6-14v10m5-7v4' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><script src="app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="#search" aria-label="弦外搜索首页"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>弦外<span class="brand-en">XIANWAI</span></a><ol class="journey" aria-label="阅读旅程"><li data-step="search"><span>01</span> 找一首歌</li><li data-step="wall"><span>02</span> 逛逛歌墙</li><li data-step="compare"><span>03</span> 对照阅读</li></ol><span class="demo-tag">独立阅读实验 <i aria-hidden="true"></i></span></div></header>
+  <main id="main" tabindex="-1"><div class="loading boot-loading" role="status" aria-live="polite"><span class="loading-wave" aria-hidden="true"><i style="--beat:0"></i><i style="--beat:1"></i><i style="--beat:2"></i><i style="--beat:3"></i><i style="--beat:4"></i><i style="--beat:5"></i><i style="--beat:6"></i><i style="--beat:7"></i><i style="--beat:8"></i></span><p>正在打开弦外…</p><div class="loading-sweep" aria-hidden="true"><i></i></div></div></main>
+  <div id="selection"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="keyword-dialog" class="keyword-dialog" aria-labelledby="word-title"><aside class="detail-panel" id="word-detail"></aside></dialog>
+  <dialog id="evidence-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <noscript>请启用 JavaScript 以体验关键词选择和对比。</noscript>
+</body>
+</html>

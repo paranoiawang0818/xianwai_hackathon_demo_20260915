@@ -1,0 +1,34 @@
+// Provider-success transport is mocked using previously acquired real excerpts.
+// This does not claim a successful new live Zhihu retrieval.
+import assert from 'node:assert/strict';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {collectSources,extractiveDataset,publicDataset,songId} from '../scripts/song-data.mjs';
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright-core');
+const output='/tmp/songwall-multi-qa';await mkdir(output,{recursive:true});
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const saved=JSON.parse(await readFile(new URL('../data/sources.json',import.meta.url),'utf8'));
+const items=saved.sources.map(s=>({Title:s.title,AuthorName:s.author,ContentType:s.type,Url:s.url,ContentText:s.texts.find(t=>t.id===s.frequencyTextId).text}));
+const query='《反乌托邦》 音乐评价';const song={id:songId(query),title:'反乌托邦',creator:'Utopia_乌托邦P',query};const sources=collectSources(items,song,new Date().toISOString()).sources;const data=publicDataset(extractiveDataset(song,sources,[],new Date().toISOString()));
+const entry={...song,status:'ready',sourceCount:sources.length,keywordCount:data.keywords.length,path:'/api/songs/'+song.id};const frame=(event,value)=>`event: ${event}\ndata: ${JSON.stringify(value)}\n\n`;
+const checks=[];const check=s=>{checks.push(s);console.log('PASS',s);};
+const context=await browser.newContext({viewport:{width:1280,height:950},reducedMotion:'no-preference'}),page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+try{
+ const actual=await (await fetch('http://127.0.0.1:4173/api/catalog')).json();
+ await page.route('**/api/catalog',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({...actual,songs:actual.songs.map(s=>s.presetId?{...s,id:s.presetId,status:'pending'}:s)})}));
+ await page.route('**/api/search',route=>route.fulfill({status:200,contentType:'text/event-stream',body:frame('error',{code:'QUOTA_EXHAUSTED',message:'测试：已缓存歌曲仍可使用'})}));
+ await page.goto('http://127.0.0.1:4173');await page.locator('#song-query').waitFor();
+ await page.locator('[data-open-song="baishixi"]').click();await page.getByRole('heading',{name:'今天的搜索额度已用完'}).waitFor();assert.match(await page.locator('#search-results').innerText(),/已缓存歌曲仍可使用/);check('白石溪预设的额度错误测试场景不会伪装为无结果');
+ await page.locator('[data-show-presets]').click();await page.locator('[data-open-song="i-love-u"]').click();await page.getByRole('heading',{name:'今天的搜索额度已用完'}).waitFor();check('I LOVE U 预设不会复用反乌托邦的观点');
+ let requestBodies=[];
+ await page.route('**/api/search',async route=>{requestBodies.push(route.request().postDataJSON());await new Promise(r=>setTimeout(r,700));await route.fulfill({status:200,contentType:'text/event-stream',body:frame('progress',{stage:'search',completed:1,total:4,message:'测试：已记录来源检索响应'})+frame('progress',{stage:'filter',completed:2,total:4,message:'测试：筛选已记录文本'})+frame('progress',{stage:'analysis',completed:3,total:4,message:'测试：整理原句'})+frame('complete',{entry,dataset:data,cached:false})}).catch(()=>{});});
+ await page.locator('#song-query').fill(query);await page.locator('#song-query').press('Enter');await page.locator('.search-progress').waitFor();assert.equal(await page.locator('[role="progressbar"]').getAttribute('aria-valuenow'),'0');assert.equal(await page.locator('.progress-spinner').evaluate(el=>getComputedStyle(el).animationName),'spin');await page.screenshot({path:output+'/progress.png',fullPage:true});check('等待时显示阶段进度、动画与取消按钮，不虚构完成百分比');
+ await page.locator('[data-cancel-search]').click();assert.match(await page.locator('#search-results').innerText(),/已取消/);await page.waitForTimeout(800);assert.match(await page.locator('#search-results').innerText(),/已取消/);check('取消后迟到的响应不会覆盖界面');
+ await page.locator('#song-query').press('Enter');await page.locator(`[data-open-song="${song.id}"]`).waitFor();assert.equal(requestBodies.at(-1).query,query);await page.locator(`[data-open-song="${song.id}"]`).click();await page.locator('.wall-word').first().waitFor();assert.equal(await page.locator('#song-title').innerText(),'反乌托邦');assert.match(await page.locator('main').innerText(),/原句预览/);check('录制资料响应可经 SSE 解析进入独立数据歌墙，无 AI 时明确原句模式');
+ const ids=data.keywords.slice(0,2).map(k=>k.id);for(const id of ids){await page.locator(`[data-view="${id}"]`).click();assert.match(await page.locator('#word-detail').innerText(),/原句预览 · 自动截取/);await page.locator(`#keyword-dialog [data-add="${id}"]`).click();await page.locator('[data-close-word]').click();}
+ await page.locator('#compare-button').click();await page.locator('.matrix').waitFor();assert.match(await page.locator('.matrix').innerText(),/原句预览 · 自动截取/);check('运行时关键词可选入对比，自动截取不会标为 AI 观点');
+ await page.locator('[data-back]').first().click();await page.locator('.wall-breadcrumb a').click();await page.locator('#song-query').fill('反乌托邦');await page.locator('#song-query').press('Enter');await page.locator('[data-open-song="dystopia"]').click();await page.locator('.wall-word').first().waitFor();assert.equal(await page.locator('[data-remove]').count(),0);check('切换歌曲后选择不串到另一首歌');
+ await page.locator('.wall-breadcrumb a').click();await page.locator('#song-query').fill(query);await page.locator('#song-query').press('Enter');await page.locator(`[data-open-song="${song.id}"]`).waitFor();await page.locator(`[data-open-song="${song.id}"]`).click();await page.locator('.wall-word').first().waitFor();assert.equal(await page.locator('[data-remove]').count(),0);check('返回首页后重新进歌墙，选择清空');
+ await page.setViewportSize({width:390,height:844});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);await page.screenshot({path:output+'/runtime-mobile.png',fullPage:true});check('动态词墙在窄屏无页面溢出');
+ await context.close();const reduced=await browser.newContext({reducedMotion:'reduce'}),p=await reduced.newPage();await p.goto('http://127.0.0.1:4173');await p.locator('#song-query').waitFor();await p.route('**/api/search',async route=>{await new Promise(r=>setTimeout(r,600));await route.fulfill({status:200,contentType:'text/event-stream',body:frame('error',{code:'TEST_ERROR',message:'测试可恢复异常'})}).catch(()=>{});});await p.locator('#song-query').fill('测试动画');await p.locator('#song-query').press('Enter');await p.locator('.progress-spinner').waitFor();assert.equal(await p.locator('.progress-spinner').evaluate(el=>getComputedStyle(el).animationName),'none');await p.locator('[data-cancel-search]').click();await reduced.close();check('遵循减少动态效果偏好');
+ assert.deepEqual(errors,[]);await writeFile(output+'/search-ui-results.json',JSON.stringify({at:new Date().toISOString(),checks,errors,note:'额度失败与成功响应均为明确的测试场景，使用历史真实摘录；实际新歌验证见 live-presets.mjs。'},null,2));
+}finally{await browser.close();}
