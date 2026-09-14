@@ -1,0 +1,14 @@
+{
+  "search": {
+    "remaining": 4982,
+    "total": 5000,
+    "checkedAt": "2026-09-14T11:23:57.126Z",
+    "resetAt": "2026-09-14T16:00:00.000Z"
+  },
+  "analysis": {
+    "remaining": 5000,
+    "total": 5000,
+    "checkedAt": "2026-09-14T10:36:51.522767+00:00",
+    "source": "官方 CLI quota 实际返回"
+  }
+}

@@ -1,0 +1,853 @@
+{
+  "schemaVersion": 2,
+  "song": {
+    "id": "song-17102360c590977c",
+    "presetId": "i-love-u",
+    "title": "I LOVE U",
+    "creator": "阿良良木健",
+    "query": "I LOVE U",
+    "metadataOrigin": "用户指定预设",
+    "edition": "真实摘录 · 准备阶段核验"
+  },
+  "preparedAt": "2026-09-14T10:37:48.182Z",
+  "analysisMode": "curated",
+  "keywords": [
+    {
+      "id": "confession",
+      "label": "告白忐忑",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 7,
+        "sourceCount": 3,
+        "patterns": [
+          "表白",
+          "告白",
+          "忐忑"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "review:s1",
+            "offset": 121,
+            "term": "表白"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "review:s1",
+            "offset": 127,
+            "term": "忐忑"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 434,
+            "term": "表白"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "review:s3",
+            "offset": 45,
+            "term": "告白"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "review:s3",
+            "offset": 59,
+            "term": "告白"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "review:s3",
+            "offset": 84,
+            "term": "告白"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "review:s3",
+            "offset": 131,
+            "term": "告白"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "emotion",
+      "label": "情绪感染",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 4,
+        "sourceCount": 3,
+        "patterns": [
+          "听哭",
+          "心动",
+          "感觉"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "review:s1",
+            "offset": 92,
+            "term": "听哭"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "review:s3",
+            "offset": 88,
+            "term": "感觉"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 238,
+            "term": "心动"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 308,
+            "term": "感觉"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "style",
+      "label": "小清新风格",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 4,
+        "sourceCount": 1,
+        "patterns": [
+          "小清新",
+          "风格",
+          "默契"
+        ],
+        "matches": [
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 221,
+            "term": "小清新"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 224,
+            "term": "风格"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 272,
+            "term": "默契"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 339,
+            "term": "风格"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "echo",
+      "label": "曲间呼应",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 4,
+        "sourceCount": 2,
+        "patterns": [
+          "呼应",
+          "心加心",
+          "彩蛋"
+        ],
+        "matches": [
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 353,
+            "term": "心加心"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 396,
+            "term": "呼应"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 410,
+            "term": "彩蛋"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "review:s3",
+            "offset": 127,
+            "term": "心加心"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "acceptance",
+      "label": "听众的距离",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 10,
+        "sourceCount": 2,
+        "patterns": [
+          "疏远",
+          "羞耻",
+          "喜欢"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "review:s1",
+            "offset": 116,
+            "term": "喜欢"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 19,
+            "term": "喜欢"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 131,
+            "term": "喜欢"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 191,
+            "term": "喜欢"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 222,
+            "term": "喜欢"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 269,
+            "term": "疏远"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 302,
+            "term": "羞耻"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 363,
+            "term": "喜欢"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 375,
+            "term": "喜欢"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 390,
+            "term": "喜欢"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "voice",
+      "label": "声音特点",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 2,
+        "sourceCount": 1,
+        "patterns": [
+          "声音",
+          "稚嫩"
+        ],
+        "matches": [
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 177,
+            "term": "稚嫩"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 193,
+            "term": "声音"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "writing",
+      "label": "用词风格",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 2,
+        "sourceCount": 1,
+        "patterns": [
+          "常见词"
+        ],
+        "matches": [
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 131,
+            "term": "常见词"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 139,
+            "term": "常见词"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "team",
+      "label": "创作配合",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 3,
+        "sourceCount": 1,
+        "patterns": [
+          "配合",
+          "铁三角"
+        ],
+        "matches": [
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 268,
+            "term": "铁三角"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 274,
+            "term": "配合"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 336,
+            "term": "铁三角"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "outside",
+      "label": "圈外传播",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 1,
+        "sourceCount": 1,
+        "patterns": [
+          "圈外"
+        ],
+        "matches": [
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 328,
+            "term": "圈外"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "sweet",
+      "label": "甜感",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 1,
+        "sourceCount": 1,
+        "patterns": [
+          "真.糖"
+        ],
+        "matches": [
+          {
+            "sourceId": "s3",
+            "textId": "review:s3",
+            "offset": 122,
+            "term": "真.糖"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "direct",
+      "label": "表白措辞",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 4,
+        "sourceCount": 2,
+        "patterns": [
+          "表白",
+          "回应"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "review:s1",
+            "offset": 121,
+            "term": "表白"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 387,
+            "term": "回应"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 425,
+            "term": "回应"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "review:s2",
+            "offset": 434,
+            "term": "表白"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "identity",
+      "label": "身份认知",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 6,
+        "sourceCount": 1,
+        "patterns": [
+          "虚拟歌姬",
+          "虚拟歌手"
+        ],
+        "matches": [
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 56,
+            "term": "虚拟歌手"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 76,
+            "term": "虚拟歌手"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 93,
+            "term": "虚拟歌手"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 158,
+            "term": "虚拟歌手"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 209,
+            "term": "虚拟歌姬"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "search:s6",
+            "offset": 253,
+            "term": "虚拟歌手"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "如何评价洛天依专辑《恋爱理论》?",
+      "author": "Theergold",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/264316428/answer/286931518?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "专辑语境 · 包含单曲分析",
+      "intro": "专辑讨论中明确涉及这首歌的段落。",
+      "retrievedAt": "2026-09-14T10:37:48.182Z",
+      "coverage": "搜索摘录，非全文",
+      "frequencyTextId": "review:s1",
+      "texts": [
+        {
+          "id": "search:s1",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T10:37:48.182Z",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "3刷已购入(为啥还没有发货啊!)\n第一次认真听这张专辑是在我初三的时候,要我妈买了台MP3,没事干就在那听歌(导致我现在养成了必须是MP3才能认真听歌这个习惯!),第一次听I LOVE YOU的时候是真的被惊艳到了,然后开始认真听这张专辑,越听越觉得这是一个悲惨的爱情故事,那我就用我认为的故事顺序来一首首曲子评价吧!\n1.远恋  远恋 - 阿良良木健 feat. 洛天依 - Vocaloid Database\n我认为这首曲子是第一首的原因是因为这曲子清楚的表明了女孩子对一位男孩子的憧憬.\n2.I LOVE U  I LOVE U - 阿良良木健 feat. 洛天依 - Vocaloid Database\n这首曲子应该是这张专辑中醉出名的曲子了把,怎么说吧.\n这首曲子把我听哭了(当时初三有点心理波动),简直精准的写出了喜欢一个人表白之前那种忐忑嘛!\n吹爆!\n3.左脑右脑  左脑右脑 - 阿良良木健 feat. 洛天依 - Vocaloid Database\n哇,发现我完全搞错了这首曲子所表达的意思,原来我是把这曲子排到白夜梦之后的,刚刚写回答案的时候一听!妈耶,这...就是写表白的嘛!\n然后就开始不爽起来了,I LOVE U和心加心无论是曲风还是词意上都很配好吗,为啥要把他们拆开!\n4.心加心  心加心 - 阿良良木健 feat. 洛天依 - Vocaloid Database\n这首应该是这张专辑里最甜的曲子了吧(是的,我认为表白成功之后才是最甜的,依存症什么的完全比不上嘛!),但是那个合成器让我有点怀疑是不是阿良良木健大大刚刚开始学会合成器,用得贼HIGH,用的方法是典型的日本用法(个人对合成器用法主观上分为3类,日本是类似Yunomi的那种风格,中国的是类似徐梦圆的,欧美的是类似Alan Walker的)很尖的说....\n还有,各位宅男们别想太多,真正的表白才没有那么容易!\n5.依存症 依存症 - 阿良良木健 feat. 洛天依 - Vocaloid Database\n这首曲子没什么好说的,恋爱最深的时候就是这样的(我前桌现在就是这个阶段,简直可怕),但是大家都知道物(故)极(事)必(套)反(路),后面肯定进入悲剧了!\n6.白夜梦 白夜梦 - 阿良良木健 feat. 洛天依, 乐正绫 - Vocaloid Database",
+          "sourceUrl": "https://www.zhihu.com/question/264316428/answer/286931518?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        },
+        {
+          "id": "review:s1",
+          "method": "准备阶段选择连续相关段落",
+          "retrievedAt": "2026-09-14T10:37:48.182Z",
+          "coverage": "搜索摘录中的连续相关片段，非全文",
+          "text": "2.I LOVE U  I LOVE U - 阿良良木健 feat. 洛天依 - Vocaloid Database\n这首曲子应该是这张专辑中醉出名的曲子了把,怎么说吧.\n这首曲子把我听哭了(当时初三有点心理波动),简直精准的写出了喜欢一个人表白之前那种忐忑嘛!\n吹爆!\n",
+          "sourceUrl": "https://www.zhihu.com/question/264316428/answer/286931518?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "如何评价洛天依专辑《恋爱理论》?",
+      "author": "和平",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "专辑语境 · 包含单曲分析",
+      "intro": "专辑讨论中明确涉及这首歌的段落。",
+      "retrievedAt": "2026-09-14T10:37:48.182Z",
+      "coverage": "搜索摘录，非全文",
+      "frequencyTextId": "review:s2",
+      "texts": [
+        {
+          "id": "search:s2",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T10:37:48.182Z",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "没有买专辑，只在B站和网易云音乐听了歌。我说说我的看法。\n（预警：以下评论严重主观）\n曲/调教：阿良良木健 词：苍十三 画：历历路路 唱：洛天依\n这个组合真的很棒。\n阿良良木健是最早期的调教师（毕竟在天依发售前就调教了一年半的元首），执着于情歌。\n苍十三是只使用常见词的词作，对常见词的驾驭力不错。\n历历路路是萌系画师，四年以来水准有明显进步。\n洛天依，稚嫩的少女形象，可爱和些许笨拙的声音。\n从特点上来看，很明显，这个组合就特别适合制作一些小清新风格的情歌。\n公平地讲，苍十三与历历路路的水准在圈内很难称为顶级（勉强可以算是一流）；但铁三角的默契配合可以弥补这部分差距。\n这张专辑选取恋爱主题，应该说是非常准确的定位。\nI LOVE U，经典之作，偶尔在圈外也能听到它。铁三角风格近乎完美的演绎。A+级\n心加心，英文名是Hear The Heart，有趣。\n“想谢谢你 能回应我的问题”一句呼应I LOVE U，算是个彩蛋（其实我一直觉得拿“能不能回应我的问题”作为表白有点奇怪……）。\n有些地方吐字不清（最典型的是“太艰难”发音变成了“太简单”，含义完全相反了好吧）。",
+          "sourceUrl": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        },
+        {
+          "id": "review:s2",
+          "method": "准备阶段选择连续相关段落",
+          "retrievedAt": "2026-09-14T10:37:48.182Z",
+          "coverage": "搜索摘录中的连续相关片段，非全文",
+          "text": "没有买专辑，只在B站和网易云音乐听了歌。我说说我的看法。\n（预警：以下评论严重主观）\n曲/调教：阿良良木健 词：苍十三 画：历历路路 唱：洛天依\n这个组合真的很棒。\n阿良良木健是最早期的调教师（毕竟在天依发售前就调教了一年半的元首），执着于情歌。\n苍十三是只使用常见词的词作，对常见词的驾驭力不错。\n历历路路是萌系画师，四年以来水准有明显进步。\n洛天依，稚嫩的少女形象，可爱和些许笨拙的声音。\n从特点上来看，很明显，这个组合就特别适合制作一些小清新风格的情歌。\n公平地讲，苍十三与历历路路的水准在圈内很难称为顶级（勉强可以算是一流）；但铁三角的默契配合可以弥补这部分差距。\n这张专辑选取恋爱主题，应该说是非常准确的定位。\nI LOVE U，经典之作，偶尔在圈外也能听到它。铁三角风格近乎完美的演绎。A+级\n心加心，英文名是Hear The Heart，有趣。\n“想谢谢你 能回应我的问题”一句呼应I LOVE U，算是个彩蛋（其实我一直觉得拿“能不能回应我的问题”作为表白有点奇怪……）。\n",
+          "sourceUrl": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "恋爱理论",
+      "author": "BF周猫",
+      "type": "article",
+      "url": "https://zhuanlan.zhihu.com/p/32508807?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "专辑语境 · 包含单曲分析",
+      "intro": "专辑讨论中明确涉及这首歌的段落。",
+      "retrievedAt": "2026-09-14T10:37:48.182Z",
+      "coverage": "搜索摘录，非全文",
+      "frequencyTextId": "review:s3",
+      "texts": [
+        {
+          "id": "search:s3",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T10:37:48.182Z",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "em答应的吹水到元旦才有空把lrc都撸好抱歉了拖了这么久。废话n多想听故事的请进\n一年前的7月，我刚拿到恋爱理论\n那时也是我们认识的时候\n当时到手的还有五月天的自传，白白的中华少女。所以并没有很仔细地去好好听这张专，但觉得这张中v有史以来最便宜的专辑蛮赚的，还不错。\n来到佛山读大学要去广州经常要坐公交，公交上会把专辑反反复复换着听，有次轮到恋爱理论，觉得诶好棒编曲完全不比南北寻光差。\n于是就有了前几天在知乎说要把阿良良吹爆\n我现在，就想踹开阿良良家的门，把他打一顿。再跪下叫爸爸。md老子纸巾不要钱啊！\n恋爱过的单身狗听这专，真的是每一首都是暴击。\n1 INTRO\nLALALA很好听\n第一章 恋始\n如果我们不曾相遇~（诶我怎么唱出来了咳咳）\n2 I LOVE U\n“就算你会拒绝我也没什么关系 至少你在我心里是永远的记忆”\n每一个想告白的人，都有这么想过吧。\n告白题材的歌不说流行圈，VC也有很多。但能写好唱好告白那种感觉的，我听过的大概只有I LOVE U了。这歌也是阿良良为数不多的真.糖。和心加心做告白唱的曲子很不错哦。\n3 远恋\n想要坐上纸飞机\n（我们都 从来没有过面对着面）\n穿越去飞到你那里\n（终于相信 我们终究也不会遇见）\n可惜 地心的引力\n（我喜欢你 也没有机会再说一遍）\n牵着我不能走 不能离\n（想要忘记 那张变成陌生的 你微笑的脸）\n幻想着命运 如果能让我们 再靠近\n就算多少痛苦委屈 全都忘记\n我们是异地恋。所以当我自己第一次好好听这首歌时，我确实流泪了。这首也是我想打爆阿良良狗头的主要原因。\n那时高三，每次上课想睡觉时，要趴下时就想她，打鸡血似的痛并快乐着满血复活听课（然后就一直想她想着想着走神了也没听课）恋爱，大概就是如此吧，痛并快乐着。\n结尾这段合唱堪称完美。超级好听。\n恋疑\n恋爱刚开始时，所有的一切都是美好的。但时间一久肯定会吵架，如果真的没有吵，那不是白头偕老就是差不多要分手了，后者居多。\n4 左脑右脑\n双方在偏执着计算\n让胼胝体 都快要承受不来\n矛盾激剧 像演一场宫斗戏\n困顿着我 撕裂的心\n左脑右脑 让我不能安定\n在争吵着 放弃还是继续\n想要戒断掉你的爱\n结束这份 若有若无的情债\n却发现我永远都 不能结束 \n依赖\n那晚上撸lrc的时候，我死也不相信这词是阿良良木健自己写的。\n你tm一个死肥宅是看了多少宫斗戏啊！\n曲子和词真的很契合，混音也超棒。\n把一个少女对对象的猜疑内心戏描写得淋漓尽致。",
+          "sourceUrl": "https://zhuanlan.zhihu.com/p/32508807?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        },
+        {
+          "id": "review:s3",
+          "method": "准备阶段选择连续相关段落",
+          "retrievedAt": "2026-09-14T10:37:48.182Z",
+          "coverage": "搜索摘录中的连续相关片段，非全文",
+          "text": "2 I LOVE U\n“就算你会拒绝我也没什么关系 至少你在我心里是永远的记忆”\n每一个想告白的人，都有这么想过吧。\n告白题材的歌不说流行圈，VC也有很多。但能写好唱好告白那种感觉的，我听过的大概只有I LOVE U了。这歌也是阿良良为数不多的真.糖。和心加心做告白唱的曲子很不错哦。\n",
+          "sourceUrl": "https://zhuanlan.zhihu.com/p/32508807?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "为什么有人喜欢虚拟歌姬?",
+      "author": "寒墨VColdInk",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/438048469/answer/1732162364?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "听众经验 · 由单曲延伸",
+      "intro": "听众回顾，从这首歌谈起自己的接受过程。",
+      "retrievedAt": "2026-09-14T10:37:48.182Z",
+      "coverage": "搜索摘录，非全文",
+      "frequencyTextId": "search:s6",
+      "texts": [
+        {
+          "id": "search:s6",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T10:37:48.182Z",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "其实这个问题挺没意思的，就和问你为什么喜欢某某人一样。\n萝卜青菜，各有所爱，这个道理大家也都懂。\n我知道，有人说虚拟歌手是不存在的；\n我知道，有人听不惯虚拟歌手的歌声；\n我知道，有人歧视虚拟歌手这个圈子。\n我知道，我都知道，毕竟我当初也不是那么理解，为什么有人会喜欢“不存在的东西”。\n就拿我自己来说吧，我听的第一首虚拟歌手的作品，是阿良良木健/洛天依 的《I LOVE U》，我很喜欢这首歌，当时我也并不知道洛天依是虚拟歌姬，所以我只是单纯的喜欢，那是最纯粹的因为一首音乐而心动。\n后来了解了洛天依和其他虚拟歌手更多，有一段时间甚至开始疏远。现在回想起来挺可笑的，可能是那种脆弱的神经在作怪吧，竟会有“羞耻”之类的感觉。\n可是我骗不了自己，有些歌很好听，我无法拒绝。甚至还有些作品是我百次千次循环的，不止中V，还有日V。我不喜欢去区别去比较，我想，喜欢就够了啊。\n为什么我会那么喜欢？",
+          "sourceUrl": "https://www.zhihu.com/question/438048469/answer/1732162364?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        }
+      ]
+    }
+  ],
+  "analyses": [
+    {
+      "sourceId": "s1",
+      "keywordId": "confession",
+      "quote": "简直精准的写出了喜欢一个人表白之前那种忐忑嘛!",
+      "summary": "作者认为歌曲写准了表白前的忐忑。",
+      "context": "这是《恋爱理论》逐曲评价中 I LOVE U 小节的直接听感。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s1",
+      "sourceUrl": "https://www.zhihu.com/question/264316428/answer/286931518?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "emotion",
+      "quote": "这首曲子把我听哭了(当时初三有点心理波动),简直精准的写出了喜欢一个人表白之前那种忐忑嘛!",
+      "summary": "作者回忆当时听哭的体验，并将其联系到告白前的情绪。",
+      "context": "括号是作者对当时个人状态的自述，不能推及其他听众。",
+      "voice": "作者回顾个人听感",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s1",
+      "sourceUrl": "https://www.zhihu.com/question/264316428/answer/286931518?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "confession",
+      "quote": "告白题材的歌不说流行圈，VC也有很多。但能写好唱好告白那种感觉的，我听过的大概只有I LOVE U了。",
+      "summary": "作者在自己的听歌范围内，特别认可这首歌对告白感受的表现。",
+      "context": "限定语是“我听过的大概”，不是对全部同题材歌曲的客观排名。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s3",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/32508807?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "emotion",
+      "quote": "但能写好唱好告白那种感觉的，我听过的大概只有I LOVE U了。",
+      "summary": "作者肯定歌曲把告白的感觉写出来、唱出来。",
+      "context": "位于专辑中 I LOVE U 小节；没有把下一节《远恋》的经历和哭泣移植过来。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s3",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/32508807?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "style",
+      "quote": "I LOVE U，经典之作，偶尔在圈外也能听到它。铁三角风格近乎完美的演绎。A+级",
+      "summary": "作者高度认可本曲对该创作组合风格的呈现。",
+      "context": "“经典”“A+”都是该回答的个人评价，不作为歌墙排序或客观正确性的依据。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s2",
+      "sourceUrl": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "echo",
+      "quote": "“想谢谢你 能回应我的问题”一句呼应I LOVE U，算是个彩蛋",
+      "summary": "作者把《心加心》的一句词理解为对 I LOVE U 的呼应。",
+      "context": "这句词属于作者正在讨论的《心加心》，不当作 I LOVE U 的歌词；这里只比较两首之间的关联。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s2",
+      "sourceUrl": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "echo",
+      "quote": "和心加心做告白唱的曲子很不错哦。",
+      "summary": "作者建议将本曲与《心加心》作为告白时唱的歌。",
+      "context": "这是作者的使用建议，不代表歌曲作者的创作意图。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s3",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/32508807?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s6",
+      "keywordId": "emotion",
+      "quote": "所以我只是单纯的喜欢，那是最纯粹的因为一首音乐而心动。",
+      "summary": "作者回忆初听本曲时还不了解虚拟歌手身份，先因音乐而心动。",
+      "context": "此前明确点名阿良良木健／洛天依的 I LOVE U；是个人接受经历。",
+      "voice": "作者回顾个人经历",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s6",
+      "sourceUrl": "https://www.zhihu.com/question/438048469/answer/1732162364?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s6",
+      "keywordId": "acceptance",
+      "quote": "后来了解了洛天依和其他虚拟歌手更多，有一段时间甚至开始疏远。",
+      "summary": "作者回顾自己了解虚拟歌手后曾一度疏远，随后在文中重新肯定喜欢的感受。",
+      "context": "下文称回想起来可笑，并表示无法拒绝好听的作品；不能将旧时疏远当作最终立场。",
+      "voice": "回顾过去立场后反思",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s6",
+      "sourceUrl": "https://www.zhihu.com/question/438048469/answer/1732162364?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "writing",
+      "quote": "苍十三是只使用常见词的词作，对常见词的驾驭力不错。",
+      "summary": "作者欣赏词作对常见词的运用。",
+      "context": "这是对专辑创作组合的评价，为其理解本曲风格提供语境；不是逐句核验全曲词作。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s2",
+      "sourceUrl": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "voice",
+      "quote": "洛天依，稚嫩的少女形象，可爱和些许笨拙的声音。",
+      "summary": "作者将声音中的可爱与些许笨拙纳入对情歌风格的理解。",
+      "context": "这是回答作者对声音与角色的描述，不是演唱者或创作者的真实身份判断。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s2",
+      "sourceUrl": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "team",
+      "quote": "但铁三角的默契配合可以弥补这部分差距。",
+      "summary": "作者认为成员间的默契能弥补其眼中的个别水准差距。",
+      "context": "前文是作者对词作与绘画水准的主观比较，后文肯定 I LOVE U 对组合风格的呈现；不作为能力排名。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s2",
+      "sourceUrl": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "outside",
+      "quote": "I LOVE U，经典之作，偶尔在圈外也能听到它。",
+      "summary": "作者说自己偶尔能在圈外听到本曲。",
+      "context": "这是个人观察，不能据此估算传播量或全体受众范围。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s2",
+      "sourceUrl": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "sweet",
+      "quote": "这歌也是阿良良为数不多的真.糖。",
+      "summary": "作者在自己的作品阅读中，将本曲视为比较纯粹的甜歌。",
+      "context": "“糖”是该作者的感受性用语，和同一段的告白主题相连。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s3",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/32508807?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "direct",
+      "quote": "其实我一直觉得拿“能不能回应我的问题”作为表白有点奇怪……",
+      "summary": "作者在肯定歌曲的同时，也对其中的表白措辞保留疑问。",
+      "context": "这句话出现在对《心加心》呼应 I LOVE U 的讨论括号中；不是对整首歌的否定。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "review:s2",
+      "sourceUrl": "https://www.zhihu.com/question/264316428/answer/279436985?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s6",
+      "keywordId": "identity",
+      "quote": "当时我也并不知道洛天依是虚拟歌姬，所以我只是单纯的喜欢",
+      "summary": "作者回忆喜欢本曲发生在了解虚拟歌手身份之前。",
+      "context": "这是其个人接触顺序，不推断其他人的认知或动机。",
+      "voice": "作者回顾个人经历",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s6",
+      "sourceUrl": "https://www.zhihu.com/question/438048469/answer/1732162364?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "华纳签约“虚拟偶像”,从“洛天依”聊中文虚拟偶像的诞生。",
+      "url": "https://zhuanlan.zhihu.com/p/399490878?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "未直接匹配歌曲名称"
+    },
+    {
+      "title": "你的中V入坑曲是哪一首?为什么它会让你入坑?",
+      "url": "https://www.zhihu.com/question/377317136/answer/3088099743?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "当前摘录过短，不足以比较"
+    },
+    {
+      "title": "对你影响最大的中V歌曲是哪首呢?",
+      "url": "https://www.zhihu.com/question/360412733/answer/1034066496?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "当前摘录过短，不足以比较"
+    },
+    {
+      "title": "洛天依的哪些歌值得推荐?",
+      "url": "https://www.zhihu.com/question/575354210/answer/2820523656?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "仅推荐歌名、短评或歌词汇编，缺少足够的本曲论述"
+    },
+    {
+      "title": "拒绝婚前性/感情洁癖者可能喜欢的纯爱及逆境坚持歌词(东亚女歌手为主,26/8/31更)",
+      "url": "https://zhuanlan.zhihu.com/p/464049481?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "仅推荐歌名、短评或歌词汇编，缺少足够的本曲论述"
+    }
+  ],
+  "limitations": [
+    "4 篇来自不同作者的真实搜索摘录，非全文，不代表全部知乎讨论。",
+    "三篇在《恋爱理论》专辑语境中讨论单曲，一篇由该曲延伸至听众经验；没有将其他歌曲的单独评价移植到本曲。",
+    "AI 概括在准备阶段逐条核对原句与上下文；条件判断、转述与过去立场分开标记。",
+    "空格表示当前摘录未涉及，不表示整篇没有讨论。词频只代表选定取得文本，不是全站热度。"
+  ],
+  "analysisNotice": "",
+  "reviewedAt": "2026-09-14T10:42:56.542Z"
+}

@@ -1,0 +1,7 @@
+{
+  "songs": [
+    {"id":"dystopia","title":"反乌托邦","creator":"Utopia_乌托邦P","aliases":["反乌托邦","乌托邦P","Utopia_乌托邦P"],"path":"data/demo.json","status":"ready"},
+    {"id":"i-love-u","title":"I LOVE U","creator":"阿良良木健","aliases":["I LOVE U","ILOVEU","I LOVE U 阿良良木健","阿良良木健"],"status":"pending","metadataOrigin":"用户指定预设，知乎讨论尚待检索"},
+    {"id":"baishixi","title":"白石溪","creator":"纯白P","aliases":["白石溪","白石溪 纯白P","纯白P","纯白"],"status":"pending","metadataOrigin":"用户指定预设，知乎讨论尚待检索"}
+  ]
+}

@@ -1,0 +1,934 @@
+{
+  "schemaVersion": 2,
+  "song": {
+    "id": "song-398a1ab18ce9fb88",
+    "presetId": "baishixi",
+    "title": "白石溪",
+    "creator": "纯白P",
+    "query": "白石溪",
+    "metadataOrigin": "用户指定预设",
+    "edition": "真实摘录 · 准备阶段核验"
+  },
+  "preparedAt": "2026-09-14T10:38:37.991Z",
+  "analysisMode": "curated",
+  "keywords": [
+    {
+      "id": "emotion",
+      "label": "情感表达",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 6,
+        "sourceCount": 3,
+        "patterns": [
+          "感情",
+          "情感",
+          "不舍",
+          "告白"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 263,
+            "term": "不舍"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 427,
+            "term": "感情"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 445,
+            "term": "情感"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 701,
+            "term": "感情"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 745,
+            "term": "情感"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "supplement:s5",
+            "offset": 244,
+            "term": "告白"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "standard",
+      "label": "评价标准",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 13,
+        "sourceCount": 2,
+        "patterns": [
+          "歌词",
+          "四言诗体",
+          "质量"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 799,
+            "term": "歌词"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 95,
+            "term": "质量"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 272,
+            "term": "质量"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 275,
+            "term": "歌词"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 358,
+            "term": "歌词"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 372,
+            "term": "四言诗体"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 401,
+            "term": "歌词"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 418,
+            "term": "歌词"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 451,
+            "term": "歌词"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 460,
+            "term": "歌词"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 537,
+            "term": "歌词"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 575,
+            "term": "歌词"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 719,
+            "term": "歌词"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "wording",
+      "label": "用词争议",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 4,
+        "sourceCount": 2,
+        "patterns": [
+          "多余",
+          "搭配不当",
+          "语义重复"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 969,
+            "term": "多余"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 977,
+            "term": "多余"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 774,
+            "term": "搭配不当"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 803,
+            "term": "语义重复"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "sound",
+      "label": "拉长发音",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 2,
+        "sourceCount": 1,
+        "patterns": [
+          "发音",
+          "拉长"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 241,
+            "term": "发音"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 246,
+            "term": "拉长"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "subjective",
+      "label": "主观欣赏",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 3,
+        "sourceCount": 1,
+        "patterns": [
+          "心态",
+          "客观评价"
+        ],
+        "matches": [
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 203,
+            "term": "心态"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 211,
+            "term": "心态"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 298,
+            "term": "客观评价"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "reception",
+      "label": "口碑变化",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 2,
+        "sourceCount": 1,
+        "patterns": [
+          "风评",
+          "好评"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 174,
+            "term": "好评"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 182,
+            "term": "风评"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "conditional",
+      "label": "条件判断",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 3,
+        "sourceCount": 1,
+        "patterns": [
+          "硬伤",
+          "质量"
+        ],
+        "matches": [
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 72,
+            "term": "硬伤"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 95,
+            "term": "质量"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 272,
+            "term": "质量"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "rhythm",
+      "label": "四字节奏",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 1,
+        "sourceCount": 1,
+        "patterns": [
+          "四字"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 226,
+            "term": "四字"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "lasting",
+      "label": "听感延续",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 2,
+        "sourceCount": 1,
+        "patterns": [
+          "今天",
+          "小时候"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 201,
+            "term": "小时候"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 273,
+            "term": "今天"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "intro",
+      "label": "简介辅助",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 1,
+        "sourceCount": 1,
+        "patterns": [
+          "歌词简介"
+        ],
+        "matches": [
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 719,
+            "term": "歌词简介"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "agreement",
+      "label": "局部认同",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 2,
+        "sourceCount": 1,
+        "patterns": [
+          "赞同",
+          "分歧"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 901,
+            "term": "赞同"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search:s1",
+            "offset": 911,
+            "term": "分歧"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "meaning",
+      "label": "字义与意境",
+      "description": "从本次摘录归纳",
+      "group": "不同的阅读角度",
+      "frequency": {
+        "count": 4,
+        "sourceCount": 1,
+        "patterns": [
+          "具体含义",
+          "感受到"
+        ],
+        "matches": [
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 650,
+            "term": "感受到"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 655,
+            "term": "感受到"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 673,
+            "term": "具体含义"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 696,
+            "term": "感受到"
+          }
+        ],
+        "method": "exact_alias_nonoverlap"
+      }
+    },
+    {
+      "id": "narrative",
+      "label": "叙事留白",
+      "description": "来自补充材料的阅读角度",
+      "group": "不同的阅读方法",
+      "frequency": {
+        "patterns": [
+          "框架",
+          "模糊",
+          "填充"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "count": 3,
+        "sourceCount": 1,
+        "matches": [
+          {
+            "sourceId": "s4",
+            "textId": "supplement:s4",
+            "offset": 190,
+            "term": "模糊"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "supplement:s4",
+            "offset": 207,
+            "term": "框架"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "supplement:s4",
+            "offset": 218,
+            "term": "填充"
+          }
+        ]
+      }
+    },
+    {
+      "id": "classical",
+      "label": "古典形式",
+      "description": "来自补充材料的阅读角度",
+      "group": "不同的阅读方法",
+      "frequency": {
+        "patterns": [
+          "对仗",
+          "诗经",
+          "形式"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "count": 4,
+        "sourceCount": 2,
+        "matches": [
+          {
+            "sourceId": "s3",
+            "textId": "search:s3",
+            "offset": 363,
+            "term": "诗经"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "supplement:s5",
+            "offset": 22,
+            "term": "形式"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "supplement:s5",
+            "offset": 28,
+            "term": "对仗"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "supplement:s5",
+            "offset": 44,
+            "term": "诗经"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "如何评价洛天依·乐正绫原创曲《白石溪》的作词水平?",
+      "author": "奚廿羽",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/41923512/answer/1916090840?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "单曲讨论",
+      "intro": "围绕《白石溪》作词与听感的回答。",
+      "retrievedAt": "2026-09-14T10:38:37.991Z",
+      "coverage": "搜索摘录，非全文",
+      "frequencyTextId": "search:s1",
+      "texts": [
+        {
+          "id": "search:s1",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T10:38:37.991Z",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "其实当我想写这个回答的时候，我是不怎么敢动笔的。首先关于《白石溪》的讨论已经很多了，大家的观点也都很完整了。但《白石溪》和《霜雪千年》对于我来说却意义非凡，甚至于我现在还是常拿出来听，所以我还是忍不住写了下关于《白石溪》的词的讨论。（也许还有世末歌者，五行娘，或者还没出的百妖少女）\n（霜雪千年：坏了，我成替身了。）\n关于白石溪，至少多数的看法是持好评的，白石溪的风评在知乎上也是由差到好的过程。\n我在小时候一开始听到的时候也是觉得很好的，尤其是中间的四字部分以及天依与阿绫的较长的发音，故意拉长的效果让我感到很好，并且有一种不舍的情绪在内，到了今天也是一样。而在纯白大的串烧（指海棠仙，白石溪，华心彩三首）里，也依旧延续了这一点，是我非常喜欢的。\n微露点滴 沾襟落袖\n丽日绰约 轻解莲舟\n 蒹葭荣茂 燕雀啁啾\n白石溪畔 斜阳逐流\n\n可嫌 金风玉露 兼程久\n灵犀心念 便相谋\n前路崎岖 躞蹀攀援 亦同守\n\n共你 百年暮昏 到白昼\n依山临水 景看旧\n而你美胜 山水万筹 尽入一人眸\n\n琴瑟愿与 共沐春秋\n滢溪潺潺 炊烟悠悠\n敢请东风 玉成双偶\n遥递家信 知否知否\n\n为理云鬓 为簪银钩\n明月可鉴 情深亦寿\n此生相依 人间白首\n千金不易 清茶淡粥\n\n前缘既断 便再无求\n云泥之异 难越鸿沟\n相思不扫 久积弥厚\n他年君归 我葬南丘\n\n逢春 枯木忽生 花飞柳\n纷纷绵绵 结作愁\n随风四散 却又轻易 染眉头\n当时 一双鸳鸯 入深藕\n\n荷香绕水 乐同游\n月下花前 本来无酒 对看竟忘忧\n\n何年何夕 两相执手\n蚀骨相思 风倾寒透\n仙人近侧 怕倚小楼\n金褛为笼 歌乐成囚\n凉夜凄长 应怨更漏\n数得千枚 零落红豆\n遗君一心 一心怎收\n杳渺音绝 余我孤奏\n\n何年何夕 共沐春秋\n银汉邈邈 炊烟悠悠\n敢请东风 小住暂留\n托书天地 安否安否\n尘心如练 长悬银钩\n鱼雁不问 斯人难候\n九霄一曲 人间白首\n隔世相问 忆否忆否\n歌词很明显的分为这几节。\n然后就一节一节来吧。\n如何评价洛天依·乐正绫原创曲《白石溪》的作词水平？ - 束梦斋的回答 - 知乎  zhihu.com/question/4192...\n首先说明，我是整体上赞同该答案，不过稍有分歧\n微露点滴 沾襟落袖 丽日绰约 轻解莲舟  蒹葭荣茂 燕雀啁啾 白石溪畔 斜阳逐流\n之前提及的答主说，微，点，滴多余，是闲笔，是多余的，都是含在“露”这一字内的。\n这一点我承认，因为古人善于将事务分类，将名物辨析的很清楚，一字便含多义。",
+          "sourceUrl": "https://www.zhihu.com/question/41923512/answer/1916090840?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "如何评价洛天依·乐正绫原创曲《白石溪》的作词水平?",
+      "author": "和平",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/41923512/answer/115234823?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "单曲讨论",
+      "intro": "围绕《白石溪》作词与听感的回答。",
+      "retrievedAt": "2026-09-14T10:38:37.991Z",
+      "coverage": "搜索摘录，非全文",
+      "frequencyTextId": "search:s3",
+      "texts": [
+        {
+          "id": "search:s3",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T10:38:37.991Z",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "“可恶的是，美好的时光总是很短暂，而且约会一次要走的路真的很远。”\n好吧，我服……\n就整体而言……限于答主的语文水平，答主其实不知道这首词有没有硬伤或者致命扣分项。如果没有的话，那么这首词的质量在中文V家属于顶尖级别；如果有，那就得视具体情况而论了……\n在这里，我想补充说明一下。作为从雅音宫羽时期跟过来的天依脑残粉，我（可能也代表了一批像我这样的人）对于中文V家曲（尤其是天依曲）是抱着一种欣赏女儿作品的心态的（没有这种心态的听众估计跟不下来，早期的天依曲那基本都没法听）。因此，要问我什么感受的话，我会说：\n如果我女儿15岁的时候能写出这种质量的歌词，这个牛逼我能吹到她结婚。\n如此一来，想要客观评价，确实是有点儿难。那我就随便讲点主观的东西，如果哪儿不对，您就当我在这儿撒泼打滚，别太在意就是。\n首先，这是一首歌词，不是诗经里的一首诗。用四言诗体的格式来评价它，我不知道是谁出的馊主意。\n那，评价歌词，应该用什么标准？\n归根结底，歌词是用来表达歌曲感情的。如果一首歌能让听众体会到它的情感，那它的歌词就不赖，哪怕这歌词其实我根本看不懂，或者干脆唱的就是一二一一二一。\n在这方面，我推荐这样一首歌。\n 仙居谣\n这首歌，PV一图流，调教和编曲堪称优秀但没有令人惊艳的亮点，歌词基本让人看不懂。我给它的评价是神曲级别。（中文V家我只认三首神曲）\n别说歌词了，这首歌的歌名是个啥意思我都看不懂。传唱神仙居所的歌谣？我觉得这样理解大概是最接近的。\n虽说如此，这首歌想要表达的空灵、出尘、淡泊意境，你能不能感受到？\n感受到了，那就行了，何必纠结每个字的具体含义呢。\n那么，这首白石溪，做到了“让听众感受到它的感情”了吗？\n我想它做到了。虽然用了歌词简介帮助听众理解，这一点有点作弊，但总的来说，在情感共鸣的角度，白石溪是非常成功的。\n既然如此。\n心念相谋搭配不当、亦同守不知所云、山水的量词不应该是筹、玉成双偶有语义重复之嫌、花飞柳没有说明飞的是柳絮、入深藕……",
+          "sourceUrl": "https://www.zhihu.com/question/41923512/answer/115234823?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "如何评价洛天依·乐正绫原创曲《白石溪》的作词水平?",
+      "author": "果哥",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/41923512/answer/218587752?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "单曲解读",
+      "intro": "补充不同阅读方法的真实回答。",
+      "retrievedAt": "2026-09-14T10:46:04.364Z",
+      "coverage": "搜索摘录，非全文",
+      "frequencyTextId": "supplement:s4",
+      "texts": [
+        {
+          "id": "supplement:s4",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T10:46:04.364Z",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "sourceUrl": "https://www.zhihu.com/question/41923512/answer/218587752?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "text": "女下凡的洗澡的地方。旁边地貌神奇，形似一尊如来佛。有形似一朵莲花。莲花座下的白石溪像一条玉带环绕，民间称这里为如来佛地，莲花宝地。而词中说轻解莲舟。显得不准确，可能小舟不押韵或莲舟形容和采莲舟一样小巧的舟。但假使作者只是把白石溪想像为一条荷花依岸的河，又如你愿意继续往下看，那么我们不不妨换一种方式来叙述。白石溪句句之间半点关系都没有就像双鱼兄说的那样。白石溪笔墨较清秀但是却给人模糊的印象。但我认为它是给我们一个框架，希望我们用思想去填充。你们要知道v家曲，如世末歌者，霜雪千年都是玄幻的风格，有什么轮回什么的，白石溪虽然是古风，但毕竟是V家曲。\n   早晨我躺在舟上（前夜准备已好今早开始出发，出发什么，接着看。）（没说是站着啊），荷花上的露水沾在我的衣衿上（衿是束腰的，如青青子衿，而不是襟。）顺着腰滑落在袖上。太阳已升，骄阳绰约，我伸手拉起挂在岸上木桩的舟绳，顺水而西，（没错白石溪假设是从某山西面向地势稍低的西方流动）顺着河岸我看到了荣茂的蒹和葭。燕雀啾啾啼啁。看来白石溪畔是一方沃土。我被景动容。太阳（斜阳明确指落日但是可以理解为斜着设来的朝阳，我们此处按落日）追逐着向西的河流，也带指时间流逝。（哎呦，他要顺水而下找她的恋人了！为什么呢，请继续往下看。）\n可嫌弃更我一起相伴相守（金风玉露出自李商隐的《辛未七夕》现指男女相爱相知相守），风雨兼程长长久久。\n心有灵犀一起寻求相爱（谋有寻找的意思这里不就是寻求幸福吗）\n人生的路难免崎岖，你我相濡以沫，共度南关长相厮守。（躞蹀攀援，躞蹀出自《闻见异辞·宿神镇鬼》指有小步，徘徊和下拜状）\n愿与你共渡千百年日起日落。相依在山水亭台中看景，我们看旧（腻，多）了美景，但仍不觉心烦，因为你的美胜过着千山万筹，全都看进我的眸中。（风景好坏没有关系的我的眼中只有你。）\n琴瑟愿与你而奏（伯牙绝弦你如知音但更胜知音。）共沐浴着骄阳，度过几代春秋岁月。\n（滢是清澈的意思）清澈的溪水潺潺，与此共度悠悠岁月。\n敢请东风成全我们在一起。（下段小住几日暂且逗留）一种农家风范。\n但这全是想象，真正的你却在远方。我寄信与你就当是前句东风寄信吧。你可知可否。\n像李清照那首什么诗啊？理云鬓簪银钩只为历经千帆后，让你看到我最美的容颜。\n你不要在外打拼为五斗米折腰了，回来吧，外面诱惑重重容易迷失啊，千金不易，我愿为你烹煮清茶淡粥。\n现你与我相断，便再无他求，你现在高官厚禄（他在外发达喽！）与上文千金不易愿他归来而如今担心却已成事实照应。\n"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "有哪些真正写的好的古风歌词?",
+      "author": "萧葳",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/305103867/answer/1881171920?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "单曲解读",
+      "intro": "补充不同阅读方法的真实回答。",
+      "retrievedAt": "2026-09-14T10:46:04.364Z",
+      "coverage": "搜索摘录，非全文",
+      "frequencyTextId": "supplement:s5",
+      "texts": [
+        {
+          "id": "supplement:s5",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T10:46:04.364Z",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "sourceUrl": "https://www.zhihu.com/question/305103867/answer/1881171920?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "text": "《白石溪》\n众多古风歌的作词里，这一首不论从形式上（通篇对仗）、还是内容上（叙事风格很像诗经），都是非常标准的「古」。\n开头是一个相遇的情景：\n微露点滴 沾衿落袖，\n丽日绰约 轻解莲舟，\n蒹葭荣茂 燕雀啁啾，\n白石溪畔 斜阳逐流。\n清晨的露珠沾湿了衣襟和袖口，年轻的女孩在这样一个好天气里泛舟出行。\n河边芦苇茂盛，飞鸟鸣叫。\n景色秀丽，姑娘更美，不知不觉我竟已在白石溪畔呆到了日暮西斜。\n是不是多少有一点“蒹葭苍苍，白露为霜。所谓伊人，在水一方。”的感觉？\n接着是一场轰轰烈烈且异常浪漫的告白：\n可嫌 金风玉露 兼程久，\n灵犀心念 便相谋，\n前路崎岖 躞蹀攀援，\n亦同守，\n共你 百年暮昏 到白昼，\n依山临水 景看旧，\n而你美胜 山水万筹，\n尽入一人眸。\n是否与“山无棱，江水为竭，冬雷震震，夏雨雪，天地合，乃敢与君绝。”的壮美，有些异曲同工之妙？\n而后是二人一段美好的相守：\n琴瑟愿与 共沐春秋，\n滢溪潺潺 炊烟悠悠，\n敢请东风 玉成双偶，\n遥递佳信 知否知否，\n为理云鬓 为簪银钩，\n明月可鉴 情深亦寿，\n此生相依 人间白首，\n千金不易 清茶淡粥。\n我们弹琴鼓瑟，不经意间，一起走过了春夏秋冬。我们在潺潺的溪水边踏过青，于山脚的村落里升起温柔的炊烟。\n我递给你最动人的情信，为你梳最美丽的发髻。"
+        }
+      ]
+    }
+  ],
+  "analyses": [
+    {
+      "sourceId": "s1",
+      "keywordId": "emotion",
+      "quote": "故意拉长的效果让我感到很好，并且有一种不舍的情绪在内，到了今天也是一样。",
+      "summary": "作者认为拉长的唱法带来不舍的情绪，并表示至今仍有同样听感。",
+      "context": "前文回忆小时候初听的感受；这里是态度延续，不是先批评后反思。",
+      "voice": "作者回顾并延续的听感",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s1",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/1916090840?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "emotion",
+      "quote": "但总的来说，在情感共鸣的角度，白石溪是非常成功的。",
+      "summary": "作者以情感传达为标准，肯定本曲的情感共鸣。",
+      "context": "此前承认使用歌词简介帮助理解“有点作弊”，随后仍给出这一局部肯定；不能据此抹去其提到的用词问题。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s3",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/115234823?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "standard",
+      "quote": "首先，这是一首歌词，不是诗经里的一首诗。用四言诗体的格式来评价它，我不知道是谁出的馊主意。",
+      "summary": "作者反对直接用四言诗体格式评价歌词。",
+      "context": "下文将评价重心放在歌曲能否让听众体会感情上。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s3",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/115234823?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "conditional",
+      "quote": "如果没有的话，那么这首词的质量在中文V家属于顶尖级别；如果有，那就得视具体情况而论了……",
+      "summary": "作者在无法确认有无硬伤的前提下，给出有条件的高度评价。",
+      "context": "前一句明确表示不知道有没有硬伤或致命扣分项，不能删去条件当作确定结论。",
+      "voice": "作者的条件判断",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s3",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/115234823?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "wording",
+      "quote": "之前提及的答主说，微，点，滴多余，是闲笔，是多余的，都是含在“露”这一字内的。",
+      "summary": "作者转述另一位答主对“微、点、滴”冗余的批评，并在紧接着的段落局部认同。",
+      "context": "后文原句是“这一点我承认”，开头又说对该答案整体赞同但稍有分歧；仅能确认这处局部赞同。",
+      "voice": "转述他人并局部认同",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s1",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/1916090840?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "wording",
+      "quote": "心念相谋搭配不当、亦同守不知所云、山水的量词不应该是筹、玉成双偶有语义重复之嫌",
+      "summary": "摘录末尾列出若干用词问题，但不足以确定作者如何逐项回应。",
+      "context": "位于肯定情感共鸣之后，摘录在清单中途结束；不把罗列直接当作最终批评结论。",
+      "voice": "说话者与最终态度待核实",
+      "status": "insufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s3",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/115234823?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "sound",
+      "quote": "尤其是中间的四字部分以及天依与阿绫的较长的发音，故意拉长的效果让我感到很好",
+      "summary": "作者特别喜欢中段四字部分与两位声库较长的发音。",
+      "context": "这是其童年初听至今延续的个人体验，不是音频测量或制作参数。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s1",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/1916090840?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "subjective",
+      "quote": "想要客观评价，确实是有点儿难。那我就随便讲点主观的东西",
+      "summary": "作者主动说明自己的评价带有主观欣赏心态。",
+      "context": "前文用“欣赏女儿作品”比喻自己听天依曲的心态；这是比喻，不推断其家庭经历。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s3",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/115234823?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "reception",
+      "quote": "关于白石溪，至少多数的看法是持好评的，白石溪的风评在知乎上也是由差到好的过程。",
+      "summary": "作者描述自己观察到的知乎风评由差到好。",
+      "context": "这是该作者对当时讨论氛围的观察，未经独立统计，不代表当前全站共识。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s1",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/1916090840?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "rhythm",
+      "quote": "尤其是中间的四字部分以及天依与阿绫的较长的发音",
+      "summary": "作者点名喜欢中间的四字部分。",
+      "context": "四字部分与拉长唱法在同一听感叙述中出现，不额外推断具体节拍或作曲技法。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s1",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/1916090840?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "lasting",
+      "quote": "并且有一种不舍的情绪在内，到了今天也是一样。",
+      "summary": "作者表示早期听到的不舍感延续到了写回答时。",
+      "context": "“今天”指原文写作时，不替换为 Demo 检索日期。",
+      "voice": "作者回顾并延续的听感",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s1",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/1916090840?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "intro",
+      "quote": "虽然用了歌词简介帮助听众理解，这一点有点作弊",
+      "summary": "作者肯定情感共鸣时，仍对借助歌词简介解释内容有所保留。",
+      "context": "这是“虽然……但总的来说……”的让步部分，需要和后文的局部肯定一起读。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s3",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/115234823?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "agreement",
+      "quote": "首先说明，我是整体上赞同该答案，不过稍有分歧",
+      "summary": "作者在回应另一篇回答时，声明总体赞同但有部分分歧。",
+      "context": "当前摘录只能继续核实一处对冗余用字批评的承认，不足以列出全部分歧，也不补造被引用回答的链接。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s1",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/1916090840?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "meaning",
+      "quote": "感受到了，那就行了，何必纠结每个字的具体含义呢。",
+      "summary": "作者用另一首歌作为例子，强调感受到意境未必要求逐字解释。",
+      "context": "这里直接讨论的是《仙居谣》，用于说明评价标准；随后作者才将“是否传达感情”的问题带回《白石溪》。不能把这段当作白石溪的具体意境描写。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "summaryKind": "ai",
+      "evidenceTextId": "search:s3",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/115234823?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s4",
+      "keywordId": "narrative",
+      "quote": "白石溪笔墨较清秀但是却给人模糊的印象。但我认为它是给我们一个框架，希望我们用思想去填充。",
+      "summary": "作者把模糊感理解为可由听者填充的叙事框架。",
+      "context": "这是该答主的阅读方式，不证明词作者有意如此；后文包含大量自行补足的故事情景。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "evidenceTextId": "supplement:s4",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/218587752?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s4",
+      "keywordId": "wording",
+      "quote": "而词中说轻解莲舟。显得不准确，可能小舟不押韵或莲舟形容和采莲舟一样小巧的舟。",
+      "summary": "作者先质疑“莲舟”的准确性，又提出押韵或舟形比喻的可能解释。",
+      "context": "这些是作者提出的假设；前段地貌说法及词源未独立核实，不作为确定事实。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "evidenceTextId": "supplement:s4",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/218587752?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s4",
+      "keywordId": "meaning",
+      "quote": "但我认为它是给我们一个框架，希望我们用思想去填充。",
+      "summary": "作者倾向于通过想象补足故事，从字面之外寻找连贯解释。",
+      "context": "区别于逐字判定准确性，这是一种允许读者参与补全的解读方法，不补造完整官方剧情。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "evidenceTextId": "supplement:s4",
+      "sourceUrl": "https://www.zhihu.com/question/41923512/answer/218587752?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s5",
+      "keywordId": "classical",
+      "quote": "这一首不论从形式上（通篇对仗）、还是内容上（叙事风格很像诗经），都是非常标准的「古」。",
+      "summary": "作者从对仗形式与类似《诗经》的叙事风格理解本曲的古典感。",
+      "context": "这是其个人的形式比较，不等于歌曲严格符合古代诗体规范。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "evidenceTextId": "supplement:s5",
+      "sourceUrl": "https://www.zhihu.com/question/305103867/answer/1881171920?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s5",
+      "keywordId": "standard",
+      "quote": "这一首不论从形式上（通篇对仗）、还是内容上（叙事风格很像诗经），都是非常标准的「古」。",
+      "summary": "作者把形式与叙事风格作为欣赏古风词的两个维度。",
+      "context": "与另一位答主反对直接套用四言诗格式的意见可并读，但二者并非必然对立。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "evidenceTextId": "supplement:s5",
+      "sourceUrl": "https://www.zhihu.com/question/305103867/answer/1881171920?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s5",
+      "keywordId": "emotion",
+      "quote": "接着是一场轰轰烈烈且异常浪漫的告白：",
+      "summary": "作者把接下来的歌词段落理解成浪漫而强烈的告白。",
+      "context": "下文用古诗的誓言作类比；这不是歌曲作者意图的独立核实。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "evidenceTextId": "supplement:s5",
+      "sourceUrl": "https://www.zhihu.com/question/305103867/answer/1881171920?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "洛天依有那些冷门但是宝藏的歌?",
+      "url": "https://www.zhihu.com/question/362313091/answer/945659399?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "当前摘录过短，不足以比较"
+    },
+    {
+      "title": "你认为哪一首古风歌曲有资格流传后世,成为金曲?",
+      "url": "https://www.zhihu.com/question/312658293/answer/611782133?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "当前摘录过短，不足以比较"
+    },
+    {
+      "title": "如何评价古风圈作词水平,和方文山的差距在哪?",
+      "url": "https://www.zhihu.com/question/266980801/answer/320024361?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "未直接匹配歌曲名称"
+    },
+    {
+      "title": "有哪些令你惊艳的歌词?",
+      "url": "https://www.zhihu.com/question/52159072/answer/165295419?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "创作者或歌曲指向不足"
+    },
+    {
+      "title": "好听的小众中文歌曲推荐?",
+      "url": "https://www.zhihu.com/question/22260995/answer/582788785?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "创作者或歌曲指向不足"
+    },
+    {
+      "title": "有哪些让你听之不忘的古风歌曲?",
+      "url": "https://www.zhihu.com/question/338865954/answer/861633824?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "创作者或歌曲指向不足"
+    },
+    {
+      "title": "有哪些好听一直听不腻的古风歌曲?",
+      "url": "https://www.zhihu.com/question/298736559/answer/514485169?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "创作者或歌曲指向不足"
+    },
+    {
+      "title": "可以推荐一首你喜欢的古风歌吗?",
+      "url": "https://www.zhihu.com/question/519070136/answer/2426646840?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "reason": "仅在古风歌曲推荐清单中列名，未展开本曲分析"
+    }
+  ],
+  "limitations": [
+    "4 篇来自不同作者的真实搜索摘录，非全文，不代表全部知乎讨论。",
+    "包含情感体验、评价标准、字词辨析、叙事留白及古典形式比较；推荐清单与纯歌词未纳入。",
+    "AI 概括在准备阶段逐条核对原句与上下文；条件判断、转述与过去立场分开标记。",
+    "空格表示当前摘录未涉及，不表示整篇没有讨论。词频只代表选定取得文本，不是全站热度。"
+  ],
+  "analysisNotice": "",
+  "reviewedAt": "2026-09-14T10:42:56.545Z"
+}

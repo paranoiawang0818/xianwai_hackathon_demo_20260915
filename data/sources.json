@@ -1,0 +1,1556 @@
+{
+  "schemaVersion": 1,
+  "song": {
+    "title": "反乌托邦",
+    "creator": "Utopia_乌托邦P",
+    "edition": "单曲体验 · 01"
+  },
+  "preparedAt": "2026-09-14T05:42:48.527256+00:00",
+  "limitations": [
+    "6 篇内容来自 5 位作者，其中 3 篇直接评价单曲，2 篇从单曲延伸讨论创作生态。",
+    "均为搜索摘录，非全文；未纳入评论。不代表全部知乎讨论或作者的完整立场。",
+    "追加检索遇到频率限制后停止；未核实作者名称的回答、纯歌词转载、其他歌曲与仅讨论概念的内容未入选。",
+    "AI 分析在准备阶段完成；浏览器只读取本地数据。原文阅读需要访问知乎。"
+  ],
+  "selectionPolicy": "展示至少涉及一个所选关键词的具体来源；按证据充分的相关角度数量排序，再按已覆盖角度数量排序；不参考热度或权威度。",
+  "keywords": [
+    {
+      "id": "resonance",
+      "label": "情绪共鸣",
+      "description": "为什么有人被这首歌打动",
+      "group": "听见感受",
+      "frequency": {
+        "count": 6,
+        "sourceCount": 4,
+        "patterns": [
+          "心理状况",
+          "受众的心理",
+          "感动",
+          "情感主题",
+          "心灵冲击"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 24,
+            "term": "心灵冲击"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 338,
+            "term": "心灵冲击"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 276,
+            "term": "心理状况"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 538,
+            "term": "受众的心理"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 74,
+            "term": "感动"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 51,
+            "term": "情感主题"
+          }
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇来源只选一份已核实的 ContentText，按所列词或对应表达逐字匹配；含作者转述歌词与回顾旧立场的提及。不统计评论、服务摘要或重复检索。"
+      }
+    },
+    {
+      "id": "craft",
+      "label": "音乐完成度",
+      "description": "技术评价与表达效果如何相处",
+      "group": "听见感受",
+      "frequency": {
+        "count": 9,
+        "sourceCount": 3,
+        "patterns": [
+          "音乐性",
+          "作曲",
+          "编曲",
+          "编混",
+          "混音",
+          "音乐制作水准"
+        ],
+        "matches": [
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 448,
+            "term": "作曲"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 453,
+            "term": "编曲"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 550,
+            "term": "音乐性"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 4,
+            "term": "作曲"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 7,
+            "term": "编曲"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 41,
+            "term": "编曲"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 43,
+            "term": "混音"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 195,
+            "term": "编混"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 316,
+            "term": "音乐制作水准"
+          }
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇来源只选一份已核实的 ContentText，按所列词或对应表达逐字匹配；含作者转述歌词与回顾旧立场的提及。不统计评论、服务摘要或重复检索。"
+      }
+    },
+    {
+      "id": "imagery",
+      "label": "歌词意象",
+      "description": "同一组意象，不同解释路径",
+      "group": "读进歌词",
+      "frequency": {
+        "count": 16,
+        "sourceCount": 4,
+        "patterns": [
+          "意象",
+          "意向",
+          "隐喻",
+          "光明",
+          "黑暗",
+          "画面"
+        ],
+        "matches": [
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 622,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 639,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 690,
+            "term": "光明"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 693,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 714,
+            "term": "光明"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 726,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 866,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 896,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 152,
+            "term": "画面"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 165,
+            "term": "意向"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 421,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 78,
+            "term": "画面"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 291,
+            "term": "画面"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 190,
+            "term": "画面"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 547,
+            "term": "画面"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 725,
+            "term": "画面"
+          }
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇来源只选一份已核实的 ContentText，按所列词或对应表达逐字匹配；含作者转述歌词与回顾旧立场的提及。不统计评论、服务摘要或重复检索。"
+      }
+    },
+    {
+      "id": "rescue",
+      "label": "自我救赎",
+      "description": "希望、表达与自己的答案",
+      "group": "读进歌词",
+      "frequency": {
+        "count": 12,
+        "sourceCount": 3,
+        "patterns": [
+          "救赎",
+          "自救",
+          "拯救"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 321,
+            "term": "拯救"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 518,
+            "term": "救赎"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 276,
+            "term": "拯救"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 282,
+            "term": "拯救"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 527,
+            "term": "拯救"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 533,
+            "term": "拯救"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 936,
+            "term": "自救"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 304,
+            "term": "拯救"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 310,
+            "term": "拯救"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 335,
+            "term": "拯救"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 483,
+            "term": "拯救"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 489,
+            "term": "拯救"
+          }
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇来源只选一份已核实的 ContentText，按所列词或对应表达逐字匹配；含作者转述歌词与回顾旧立场的提及。不统计评论、服务摘要或重复检索。"
+      }
+    },
+    {
+      "id": "realism",
+      "label": "现实题材",
+      "description": "歌曲如何被放进现实语境",
+      "group": "走向创作",
+      "frequency": {
+        "count": 4,
+        "sourceCount": 2,
+        "patterns": [
+          "现实主义化",
+          "现实填词",
+          "青春主题",
+          "青春伤痛",
+          "现实化"
+        ],
+        "matches": [
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 0,
+            "term": "现实主义化"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 242,
+            "term": "现实填词"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 29,
+            "term": "青春主题"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 215,
+            "term": "青春伤痛"
+          }
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇来源只选一份已核实的 ContentText，按所列词或对应表达逐字匹配；含作者转述歌词与回顾旧立场的提及。不统计评论、服务摘要或重复检索。"
+      }
+    },
+    {
+      "id": "imitation",
+      "label": "模仿与同质化",
+      "description": "相似作品为何接连出现",
+      "group": "走向创作",
+      "frequency": {
+        "count": 10,
+        "sourceCount": 2,
+        "patterns": [
+          "同质化",
+          "复读",
+          "模仿",
+          "效仿",
+          "相似主题",
+          "高度相似",
+          "盲目跟风"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 15,
+            "term": "复读"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 61,
+            "term": "复读"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 106,
+            "term": "同质化"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 380,
+            "term": "相似主题"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 453,
+            "term": "高度相似"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 611,
+            "term": "复读"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 692,
+            "term": "盲目跟风"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 1017,
+            "term": "复读"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 295,
+            "term": "效仿"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 326,
+            "term": "模仿"
+          }
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇来源只选一份已核实的 ContentText，按所列词或对应表达逐字匹配；含作者转述歌词与回顾旧立场的提及。不统计评论、服务摘要或重复检索。"
+      }
+    },
+    {
+      "id": "visibility",
+      "label": "被看见",
+      "description": "从写作者自己的经验出发",
+      "group": "走向创作",
+      "frequency": {
+        "count": 3,
+        "sourceCount": 1,
+        "patterns": [
+          "被看见",
+          "被认同",
+          "有人看"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 706,
+            "term": "有人看"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 827,
+            "term": "被看见"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 885,
+            "term": "被认同"
+          }
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇来源只选一份已核实的 ContentText，按所列词或对应表达逐字匹配；含作者转述歌词与回顾旧立场的提及。不统计评论、服务摘要或重复检索。"
+      }
+    },
+    {
+      "id": "traffic",
+      "label": "流量与传播",
+      "description": "对走红原因的不同解释",
+      "group": "走向创作",
+      "frequency": {
+        "count": 11,
+        "sourceCount": 3,
+        "patterns": [
+          "流量",
+          "推流",
+          "曝光",
+          "播放量",
+          "传播"
+        ],
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 30,
+            "term": "流量"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 110,
+            "term": "流量"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 370,
+            "term": "流量"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 579,
+            "term": "播放量"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 652,
+            "term": "流量"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 900,
+            "term": "曝光"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 939,
+            "term": "推流"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 323,
+            "term": "推流"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 346,
+            "term": "流量"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 371,
+            "term": "播放量"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 260,
+            "term": "推流"
+          }
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇来源只选一份已核实的 ContentText，按所列词或对应表达逐字匹配；含作者转述歌词与回顾旧立场的提及。不统计评论、服务摘要或重复检索。"
+      }
+    },
+    {
+      "id": "pressure",
+      "label": "学业压力",
+      "description": "作者将歌曲的吸引力部分归因于它契合受学业压力困扰的青少年。",
+      "group": "继续探索",
+      "frequency": {
+        "patterns": [
+          "学业压力"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇唯一搜索摘录中对应词语的精确匹配，含转述和歌词；非全站热度。",
+        "matches": [
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 267,
+            "term": "学业压力"
+          }
+        ],
+        "count": 1,
+        "sourceCount": 1
+      }
+    },
+    {
+      "id": "video",
+      "label": "影像表达",
+      "description": "作者把朴素的影像、直白填词和向上内核一起看作歌曲触达听众的因素。",
+      "group": "继续探索",
+      "frequency": {
+        "patterns": [
+          "手持摄像",
+          "实拍",
+          "PV",
+          "pv",
+          "快闪",
+          "长镜头"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇唯一搜索摘录中对应词语的精确匹配，含转述和歌词；非全站热度。",
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 567,
+            "term": "PV"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 227,
+            "term": "手持摄像"
+          },
+          {
+            "sourceId": "s2",
+            "textId": "search-03.json:1905309411175532240",
+            "offset": 234,
+            "term": "pv"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 60,
+            "term": "实拍"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 68,
+            "term": "pv"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 321,
+            "term": "PV"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 445,
+            "term": "PV"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 531,
+            "term": "PV"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 705,
+            "term": "PV"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 718,
+            "term": "快闪"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 785,
+            "term": "快闪"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 833,
+            "term": "长镜头"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 838,
+            "term": "快闪"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 919,
+            "term": "PV"
+          }
+        ],
+        "count": 14,
+        "sourceCount": 4
+      }
+    },
+    {
+      "id": "production",
+      "label": "词曲错位",
+      "description": "来自补充材料的阅读角度",
+      "group": "不同的阅读方法",
+      "frequency": {
+        "patterns": [
+          "错位",
+          "奔流"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "count": 8,
+        "sourceCount": 1,
+        "matches": [
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 266,
+            "term": "错位"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 409,
+            "term": "错位"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 428,
+            "term": "奔流"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 511,
+            "term": "奔流"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 553,
+            "term": "错位"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 576,
+            "term": "错位"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 642,
+            "term": "错位"
+          },
+          {
+            "sourceId": "s6",
+            "textId": "supplement:s6",
+            "offset": 774,
+            "term": "错位"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comfort",
+      "label": "文字的安慰",
+      "description": "作者用自己曾写诗安慰朋友的经历，解释对歌曲中以文字帮助他人的感受。",
+      "group": "继续探索",
+      "frequency": {
+        "patterns": [
+          "安慰",
+          "纸条",
+          "写诗"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇唯一搜索摘录中对应词语的精确匹配，含转述和歌词；非全站热度。",
+        "matches": [
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 405,
+            "term": "纸条"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 432,
+            "term": "安慰"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 451,
+            "term": "纸条"
+          }
+        ],
+        "count": 3,
+        "sourceCount": 1
+      }
+    },
+    {
+      "id": "light",
+      "label": "光与暗",
+      "description": "作者不把光与暗简单视作善恶两端，强调要找到属于自己的答案。",
+      "group": "继续探索",
+      "frequency": {
+        "patterns": [
+          "光明",
+          "黑暗"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇唯一搜索摘录中对应词语的精确匹配，含转述和歌词；非全站热度。",
+        "matches": [
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 622,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 639,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 690,
+            "term": "光明"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 693,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 714,
+            "term": "光明"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 726,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 866,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s3",
+            "textId": "search-03.json:130032848690",
+            "offset": 896,
+            "term": "黑暗"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 421,
+            "term": "黑暗"
+          }
+        ],
+        "count": 9,
+        "sourceCount": 2
+      }
+    },
+    {
+      "id": "expression",
+      "label": "表达困境",
+      "description": "作者以话语权受限来理解歌词主体的表达困境。",
+      "group": "继续探索",
+      "frequency": {
+        "patterns": [
+          "话语权",
+          "没法说"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇唯一搜索摘录中对应词语的精确匹配，含转述和歌词；非全站热度。",
+        "matches": [
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 246,
+            "term": "话语权"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 510,
+            "term": "话语权"
+          },
+          {
+            "sourceId": "s4",
+            "textId": "search-03.json:129824390472",
+            "offset": 526,
+            "term": "没法说"
+          }
+        ],
+        "count": 3,
+        "sourceCount": 1
+      }
+    },
+    {
+      "id": "reflection",
+      "label": "创作反思",
+      "description": "作者自己开始写作后，重新审视了先前批评其他创作者的心境。",
+      "group": "继续探索",
+      "frequency": {
+        "patterns": [
+          "创作者视角",
+          "心境",
+          "认同感"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇唯一搜索摘录中对应词语的精确匹配，含转述和歌词；非全站热度。",
+        "matches": [
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 191,
+            "term": "心境"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 759,
+            "term": "心境"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 833,
+            "term": "创作者视角"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 841,
+            "term": "心境"
+          },
+          {
+            "sourceId": "s1",
+            "textId": "search-02.json:1974950787324085589",
+            "offset": 886,
+            "term": "认同感"
+          }
+        ],
+        "count": 5,
+        "sourceCount": 1
+      }
+    },
+    {
+      "id": "cost",
+      "label": "创作成本",
+      "description": "作者把低成本、易于制作与受众偏好联系起来，解释模仿扩散。",
+      "group": "继续探索",
+      "frequency": {
+        "patterns": [
+          "成本低",
+          "制作水准",
+          "效率"
+        ],
+        "method": "exact_alias_nonoverlap",
+        "coverage": "每篇唯一搜索摘录中对应词语的精确匹配，含转述和歌词；非全站热度。",
+        "matches": [
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 318,
+            "term": "制作水准"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 349,
+            "term": "成本低"
+          },
+          {
+            "sourceId": "s5",
+            "textId": "search-03.json:1938427706539750301",
+            "offset": 352,
+            "term": "效率"
+          }
+        ],
+        "count": 3,
+        "sourceCount": 1
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "当我们都在反乌托邦“活下去”",
+      "author": "你个怪物",
+      "type": "article",
+      "url": "https://zhuanlan.zhihu.com/p/1974950787324085589?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "创作生态",
+      "intro": "从《反乌托邦》出发，回顾自己对同质化与创作动机的看法。",
+      "retrievedAt": "2026-09-14T05:42:02.178003+00:00",
+      "coverage": "搜索摘录，非全文",
+      "authorVerifiedFrom": "search-02.json",
+      "texts": [
+        {
+          "id": "search-02.json:1974950787324085589",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T05:42:02.178003+00:00",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "中文 VOCALOID 圈的‘复读’现象，究竟是心灵冲击还是流量刺激的结果？\n这篇文章最初的标题是《中 V 圈是一个巨大的复读机》，意在批判中文 VOCALOID 圈（以洛天依为代表的虚拟歌姬创作生态）日益严重的同质化与流量化倾向。可惜彼时动力不足，兼以学业繁重，搁笔良久，终未完稿。由此也真切体会到钱钟书先生在《围城》序中那句“创作冲动不等于创作才能”的深意。如今闲暇时重拾笔端，心境却已悄然改变——不再急于指责，而更想写些“关于中 V，又不关于它”的东西。\n既如此，索性仍从它开始。\n前段时间，我注意到中 V 圈似乎正迎来某种“第二春”。其征兆，可追溯至今年二月《反乌托邦》（BV1CVPoeNEq4）的爆火。不知是否是歌中“反乌托邦”“拯救我自己”“活下去”等词语带来的心灵冲击，还是这位距初投稿只有三月左右的 P 主发出爆款所带来的流量刺激，不久后与之相似主题的歌曲便如竹笋般长出。一如《理想主义患者》《理想挽歌》与相似风格歌曲在随后很长时间霸占周榜。\n这股浪潮催生出了一种“中 V 公式曲”：前奏高度相似——往往是极具辨识度的电子合成旋律；主题高度集中——不外乎“我爱你”“想去死”“献给你的”；歌词则充斥着“批判”“自我”“救赎”等关键词。如此的歌曲辅以以星尘为首的高性能歌姬几近人声的演绎，再搭配 AI 辅助生成的华丽 PV，最终构成一首又一首播放量轻松突破十万的“殿堂曲”。而 P 主们，也凭着对这类题材的复读被粉丝迅速捧为“天才创作者”。\n这些题材本身并无原罪，而“有罪”的是在创作中为流量迷眼，“为赋新词强说愁”的 P 主们——这是我当时想写的。我当时还想批判他们盲目跟风，将创作目的锚定为“有人看”“高点赞”“（看起来）有思想”以及“获取一个 VOCALOID 创作者的身份”。\n但我都说了，我的心境发生了些许改变。在原篇搁笔的几个月里，我也在知乎贴吧甚至 steam 评测中发布了几篇长文。技术力低下，闲暇时间少的我选择用文字去“被看见”。从创作者视角看创作心境十分不同。文章发布后我往往会每隔不久便打开面板查看，而看着阅读量赞同量的上涨，心里的被认同感也不断被唤起。为了增加曝光，我也曾探究过一些脱离于创作本身之外的盘外招，如在知乎投问题比投文章更能被推流，在贴吧要娓娓道来，不要在一层楼里讲太多话。\n这几天趁闲暇，准备将那篇搁置已久的文章写完。\n整理思路时，忽然意识到：这样的自己何尝不是在参与某种形式的“复读”？",
+          "sourceUrl": "https://zhuanlan.zhihu.com/p/1974950787324085589?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        }
+      ],
+      "frequencyTextId": "search-02.json:1974950787324085589"
+    },
+    {
+      "id": "s2",
+      "title": "如何评价b站up主Utopia_乌托邦P制作的音乐《反乌托邦》?",
+      "author": "0wzyt1",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "单曲及创作生态",
+      "intro": "同时讨论单曲的音乐完成度、情绪回应与现实题材。",
+      "retrievedAt": "2026-09-14T05:42:25.959385+00:00",
+      "coverage": "搜索摘录，非全文",
+      "authorVerifiedFrom": "search-03.json",
+      "texts": [
+        {
+          "id": "search-01.json:1905309411175532240",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T05:41:38.080907+00:00",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "现实主义化对于泛中术P主（尤其是2022年后开始活跃的「新生代」P主）而言更像是一条可持续的道路，而这条道路至迟在2021年的《是不是我本不该出生》即已埋下路基。这条道路从《是不是我本不该出生》到《逃❗》《卷❗》到《偷外卖之歌》《反乌托邦》延续了四年，也确实随时代的悲风承载了不俗的成绩，在可见的将来应该还会延续下去：今年2月起以《反乌托邦》为范本的“邦式术曲”蔚然成风即是一大例证。\n———我是分割线———\n这首歌爆火最大的因素显然不是音乐本身，而是它手持摄像的廉价pv、平白如话的现实填词、朴实无华的向上内核相当契合了现代大量囿于学业压力的青少年的心理状况（尤其是中学生），而他们正好是B站的主力军（至少是主力军的一大部分）；再加上B站自己的推流（笔者个人倾向于这不是乌托邦P本人主动买的流量，毕竟一个人想把一个视频买到每周必看与600w播放量代价也太大了；同时，他6月份的动态暗示有部分粉丝主动为其买量的行为），几个因素共同将《反乌托邦》推上了泛中术圈内不可忽视的位置。\n这首歌确实有缺陷：作曲简略，编曲单薄，似乎还有些“自作多情”；不过，谁没有“自作多情”过呢？\n我们也可以说《妄想症》系列自作多情，一大堆日术作品自作多情，但它们很多也正是依靠所谓“自作多情”而契合了受众的心理，再加上优秀的音乐性等因素而火起来的。",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        },
+        {
+          "id": "search-03.json:1905309411175532240",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T05:42:25.959385+00:00",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "现实主义化对于泛中术P主（尤其是2022年后开始活跃的「新生代」P主）而言更像是一条可持续的道路，而这条道路至迟在2021年的《是不是我本不该出生》即已埋下路基。这条道路从《是不是我本不该出生》到《逃❗》《卷❗》到《偷外卖之歌》《反乌托邦》延续了四年，也确实随时代的悲风承载了不俗的成绩，在可见的将来应该还会延续下去：今年2月起以《反乌托邦》为范本的“邦式术曲”蔚然成风即是一大例证。\n———我是分割线———\n这首歌爆火最大的因素显然不是音乐本身，而是它手持摄像的廉价pv、平白如话的现实填词、朴实无华的向上内核相当契合了现代大量囿于学业压力的青少年的心理状况（尤其是中学生），而他们正好是B站的主力军（至少是主力军的一大部分）；再加上B站自己的推流（笔者个人倾向于这不是乌托邦P本人主动买的流量，毕竟一个人想把一个视频买到每周必看与600w播放量代价也太大了；同时，他6月份的动态暗示有部分粉丝主动为其买量的行为），几个因素共同将《反乌托邦》推上了泛中术圈内不可忽视的位置。\n这首歌确实有缺陷：作曲简略，编曲单薄，似乎还有些“自作多情”；不过，谁没有“自作多情”过呢？\n我们也可以说《妄想症》系列自作多情，一大堆日术作品自作多情，但它们很多也正是依靠所谓“自作多情”而契合了受众的心理，再加上优秀的音乐性等因素而火起来的。",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        },
+        {
+          "id": "answers-01.json:1905309411175532240",
+          "method": "question answers",
+          "retrievedAt": "2026-09-14T05:42:05.850563+00:00",
+          "coverage": "服务端摘要，非全文",
+          "text": "抛砖引玉一下：笔者引用一下自己在另一个问题下的回答。 2022年以来的事实雄辩地证明：泛中术（即中文虚拟歌手圈）是时候在买推广、吃老本、蹭别家热度和题材现实主义化之间做出选择了。买推广如《戏游九州》《天星问》，吃老本如《霜雪千年（重编版）》《相相思若循》，蹭热度如「忘川」「崩铁」，现实化如《偷外卖之歌》《反乌托邦》。 现实主义化对于泛中术P主（尤其是2022年后开始活跃的「新生代」P主）而言更像是一条可持续…",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240"
+        }
+      ],
+      "frequencyTextId": "search-03.json:1905309411175532240"
+    },
+    {
+      "id": "s3",
+      "title": "如何评价b站up主Utopia_乌托邦P制作的音乐《反乌托邦》?",
+      "author": "Rabit-T",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/15570446264/answer/130032848690?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "单曲解读",
+      "intro": "将歌词与自己的写诗经历联系，讨论希望与自救。",
+      "retrievedAt": "2026-09-14T05:42:25.959385+00:00",
+      "coverage": "搜索摘录，非全文",
+      "authorVerifiedFrom": "search-03.json",
+      "texts": [
+        {
+          "id": "search-03.json:130032848690",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T05:42:25.959385+00:00",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "接下来是主观感受部分了。\n不过这里可以结合歌词了，可以说这一些歌词，包括整个创作思路，应该受了《命に嫌われている》这首歌很大影响：\n这首歌确实挺令人感动的。\n“反乌托邦”在这里并不是只批判一个理想完美的世界，而这里的意思是这个世界它本质上并不是一个理想完美的世界，所以：\n反乌托邦中的争夺\n把愿望敲碎成粉末\n心灵也被挂上门锁\n看不清灯火\n但我还想做些什么\n其实还想要说很多\n请你等等我\n请你等等我\n人类生活在这么一个“反乌托邦”的世界，这个世界注定是不完美，不友善的世界，所以作者希望用这首歌给你传达一些希望。\n两块五的签字笔\n东拼西凑的词句\n妄想用它拯救你\n顺便拯救我自己\n好了，这个我算有发言权了。\n本人在高中时期，并不算一个特别合群的人，当然也喜欢发癫，时常用一本小本子记录一些莫名其妙的诗，当然，这不代表我一点朋友也没有。\n某年运动会时期，我的一个朋友有些不开心，我多多少少了解过她的一点心事，拿了一张纸条写了一首诗给她（那篇诗的原文我暂时不知道了），算是安慰她，虽然我并不清楚她会怎么对待这张纸条，直到后来互换过周记本，万万没有想到她把这首诗写进了这本周记，这也确实是我万万没想到的一件事情，也确实算是“两块五的签字笔，东拼西凑的词句，妄想用它拯救你，顺便拯救我自己”了。\n只因为\n你那渴望自由的心脏\n困在一张没空隙的网\n我们的周围并非没光亮\n只是太耀眼将我们灼伤\n在这个世界难免会迷茫\n但别再把小刀带在身上\n至少我还在为你而歌唱\n在黑暗漫长的反乌托邦\n即便我们都在这黑暗漫长的反乌托邦\n现在“与光同尘”几乎算个贬义词了，某种程度上，00年代的人之中有一部分的人已经对“光明与黑暗”这样的命题有了新的解释与看法，眼前的光明并非真的和善，眼前的黑暗也并非完全冰冷，现在的很多人，他们已经发现了这个世界从来就没有他们被教育中的那样的善良，世界上也有很多“衣冠禽兽”的人，很多人表面风光，背后一套（这类事情在00时代的高中同学关系上经常发生），所以周围并不是没有光，反而是“太阳过于耀眼将我们灼伤〞了。\n不过这个“反乌托邦”的“黑暗漫长”也不应该成为我们的归宿，相反，我们更应该在在漫长的黑暗中找到真正属于自己的“光”，不是别人的，有些人的光反倒是“汝之砒霜〞，希望你自救，自己找到属于自己的答案。",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/130032848690?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        },
+        {
+          "id": "answers-01.json:130032848690",
+          "method": "question answers",
+          "retrievedAt": "2026-09-14T05:42:05.850563+00:00",
+          "coverage": "服务端摘要，非全文",
+          "text": "作为题主本人来回答一波： 首先这是有关音乐本身的一些音乐性的部分： 编曲确实很简单哈，也听得出来有一定的不成熟，当然这某种程度上是一句废话，因为音乐不能拿简单与否一概而论。 音乐这个东西，他确实是一个表达的过程，技术好不好不重要，重要的是在一首歌里面够用，比如吴青峰有一首歌《恋人絮语》，这个歌主旋律非常简单，如果没听错的话前面就是一个653217，后面是6543217，没有太复杂，但是依然能很好的表达他的意思，…",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/130032848690"
+        }
+      ],
+      "frequencyTextId": "search-03.json:130032848690"
+    },
+    {
+      "id": "s4",
+      "title": "如何评价b站up主Utopia_乌托邦P制作的音乐《反乌托邦》?",
+      "author": "Everlasting",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/15570446264/answer/129824390472?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "单曲解读",
+      "intro": "从歌词意象进入话语权、自由与主体性的解释。",
+      "retrievedAt": "2026-09-14T05:42:25.959385+00:00",
+      "coverage": "搜索摘录，非全文",
+      "authorVerifiedFrom": "search-03.json",
+      "texts": [
+        {
+          "id": "search-01.json:129824390472",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T05:41:38.080907+00:00",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "这个歌的作曲和编曲我就不分析了，交给各位了，但是至于什么水平…，只能说有待进步的水平。\n我分析一下这个歌词。\n反乌托邦中的争夺\n把愿望敲碎成粉末\n心灵也被挂上门锁\n看不清灯火\n但我还想做些什么\n其实还想要说很多\n请你等等我\n请你等等我\n他先说用了，\n愿望—粉末，\n心灵—门锁，\n看不清的灯火\n这不算是什么画面感极强的表达，但是这些意向的拼凑表达出来了一种暴力感，这种暴力感来至于一种崩坏，是所以的信仰都被粉末了，是所有想法都被禁锢了，所以我还能怎么办？但是我还想做出什么，说出什么，其实是我的话语权被剥夺了，我还能怎么说？我还要怎么说？但是我已经没有说出来的机会了。\n两块五的签字笔\n东拼西凑的词句\n妄想用它拯救你\n顺便拯救我自己\n这这句话…，我只能说自行理解，反正就是拯救自己…\n只因为\n你那渴望自由的心脏\n困在一张没空隙的网\n我们的周围并非没光亮\n只是太耀眼将我们灼伤\n在这个世界难免会迷茫\n但别再把小刀带在身上\n至少我还在为你而歌唱\n在黑暗漫长的反乌托邦\n权利的规训就像一个密不透风的网一样，罩住我们，无法逃出…\n饿…\n我懂了，一定是这样的。\n前面是\n妄想用它拯救你\n顺便拯救我自己\n一定是主体性的创伤啊，因为我的话语权被剥夺了，我想要说，但是又没法说，所以是实在界的我受到了创伤。\n根据公式，主体将对象a置于欲望成因的位置，可得，\n“自由”一定是就是对象a，所以“自由”实为意识形态幻象，掩盖符号界的主体性根本匮乏。\n也就是因为在现实中我的找不到，所以映照了一个在想象之中的他者就是“自由”，渴望自由的我。这个世界的权利的规训就像一个密不透风的网一样，不存在“自由”的逃逸孔洞，所以无法逃脱。\n我们的周围并非没光亮\n只是太耀眼将我们灼伤\n我们都周围是有阳光的，只是太耀眼？",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/129824390472?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        },
+        {
+          "id": "search-02.json:129824390472",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T05:42:02.178003+00:00",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "只因为\n你那渴望自由的心脏\n困在一张没空隙的网\n我们的周围并非没光亮\n只是太耀眼将我们灼伤\n在这个世界难免会迷茫\n但别再把小刀带在身上\n至少我还在为你而歌唱\n在黑暗漫长的反乌托邦\n权利的规训就像一个密不透风的网一样，罩住我们，无法逃出…\n饿…\n我懂了，一定是这样的。\n前面是\n妄想用它拯救你\n顺便拯救我自己\n一定是主体性的创伤啊，因为我的话语权被剥夺了，我想要说，但是又没法说，所以是实在界的我受到了创伤。\n根据公式，主体将对象a置于欲望成因的位置，可得，\n“自由”一定是就是对象a，所以“自由”实为意识形态幻象，掩盖符号界的主体性根本匮乏。\n也就是因为在现实中我的找不到，所以映照了一个在想象之中的他者就是“自由”，渴望自由的我。这个世界的权利的规训就像一个密不透风的网一样，不存在“自由”的逃逸孔洞，所以无法逃脱。\n我们的周围并非没光亮\n只是太耀眼将我们灼伤\n我们都周围是有阳光的，只是太耀眼？\n我明白了，这是想象界的投射，因为主体需要想象界认同，但是这个对自由的投射是想象之中的，当在投射越强，主体性越匮乏，就会形成新的创伤。\n在这个世界难免会迷茫\n主体性在大他者之中迷失，也就是世界的迷茫其实我自我的投射。\n但别再把小刀带在身上\n按道理来讲应该是带着小刀，因为小刀应该是代表的反抗与暴力，但是他说别带着小刀，所以这种这种压力向外不行，转而向内获取快感，直面“他者的不在场”，指向自我伤害，所以不能这样，我们要重构欲望，确认“大他者的缺席”。\n即便我们都在这黑暗漫长的反乌托邦忍着想要挣脱的生活\n做出不想做的承诺\n列车上坐错站的乘客\n困惑着沉默\n但我还想做些什么\n其实还想要说很多\n请你等等我\n请你等等我\n直面存在本身，某种程度上也构建出来的“自在-自为”的辨证，也就是压迫与反抗的关系。",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/129824390472?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        },
+        {
+          "id": "search-03.json:129824390472",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T05:42:25.959385+00:00",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "这个歌的作曲和编曲我就不分析了，交给各位了，但是至于什么水平…，只能说有待进步的水平。\n我分析一下这个歌词。\n反乌托邦中的争夺\n把愿望敲碎成粉末\n心灵也被挂上门锁\n看不清灯火\n但我还想做些什么\n其实还想要说很多\n请你等等我\n请你等等我\n他先说用了，\n愿望—粉末，\n心灵—门锁，\n看不清的灯火\n这不算是什么画面感极强的表达，但是这些意向的拼凑表达出来了一种暴力感，这种暴力感来至于一种崩坏，是所以的信仰都被粉末了，是所有想法都被禁锢了，所以我还能怎么办？但是我还想做出什么，说出什么，其实是我的话语权被剥夺了，我还能怎么说？我还要怎么说？但是我已经没有说出来的机会了。\n两块五的签字笔\n东拼西凑的词句\n妄想用它拯救你\n顺便拯救我自己\n这这句话…，我只能说自行理解，反正就是拯救自己…\n只因为\n你那渴望自由的心脏\n困在一张没空隙的网\n我们的周围并非没光亮\n只是太耀眼将我们灼伤\n在这个世界难免会迷茫\n但别再把小刀带在身上\n至少我还在为你而歌唱\n在黑暗漫长的反乌托邦\n权利的规训就像一个密不透风的网一样，罩住我们，无法逃出…\n饿…\n我懂了，一定是这样的。\n前面是\n妄想用它拯救你\n顺便拯救我自己\n一定是主体性的创伤啊，因为我的话语权被剥夺了，我想要说，但是又没法说，所以是实在界的我受到了创伤。\n根据公式，主体将对象a置于欲望成因的位置，可得，\n“自由”一定是就是对象a，所以“自由”实为意识形态幻象，掩盖符号界的主体性根本匮乏。\n也就是因为在现实中我的找不到，所以映照了一个在想象之中的他者就是“自由”，渴望自由的我。这个世界的权利的规训就像一个密不透风的网一样，不存在“自由”的逃逸孔洞，所以无法逃脱。\n我们的周围并非没光亮\n只是太耀眼将我们灼伤\n我们都周围是有阳光的，只是太耀眼？",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/129824390472?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        },
+        {
+          "id": "answers-01.json:129824390472",
+          "method": "question answers",
+          "retrievedAt": "2026-09-14T05:42:05.850563+00:00",
+          "coverage": "服务端摘要，非全文",
+          "text": "这个歌的作曲和编曲我就不分析了，交给各位了，但是至于什么水平…，只能说有待进步的水平。 我分析一下这个歌词。 反乌托邦中的争夺 把愿望敲碎成粉末 心灵也被挂上门锁 看不清灯火 但我还想做些什么 其实还想要说很多 请你等等我 请你等等我他先说用了， 愿望—粉末， 心灵—门锁， 看不清的灯火 这不算是什么画面感极强的表达，但是这些意向的拼凑表达出来了一种暴力感，这种暴力感来至于一种崩坏，是所以的信仰都被粉末了，…",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/129824390472"
+        }
+      ],
+      "frequencyTextId": "search-03.json:129824390472"
+    },
+    {
+      "id": "s5",
+      "title": "有没有中文VOCALOID听众,能总结下当前中v的曲风特点及其形成的原因?",
+      "author": "biapia",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/1911850468486914809/answer/1938427706539750301?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "创作生态",
+      "intro": "明确以《反乌托邦》为例，讨论曲风、制作与模仿。",
+      "retrievedAt": "2026-09-14T05:42:25.959385+00:00",
+      "coverage": "搜索摘录，非全文",
+      "authorVerifiedFrom": "search-03.json",
+      "texts": [
+        {
+          "id": "search-03.json:1938427706539750301",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T05:42:25.959385+00:00",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "text": "“当前”的中v，版本答案就毫无疑问是“XXXX原创摇滚”+青春主题。特点主要在于轻编曲混音制作、重歌词情感主题，低成本的实拍+无文字动效pv；当然也有一些在画面上有所区别的曲子，但总的趋势是这样。\n形成原因的第一层起始于《反乌托邦》效应带动的热潮。\n《反乌托邦》是这类曲风最典型的代表，并且在一个合适的时机得到了算法的青睐；即使从制作人的角度来看，这首曲子中吉他突出刺耳的midi味、粗糙的编混细节和无参的歌声都是严重的减分项，但青春伤痛的主题和平实（理解门槛低）的词曲足以让一拥而入的听众忽略这些细节，转而继续助力歌曲推流。\n反乌的爆火也带动了众多年轻p主在曲风（包括制作方法）、画面上的效仿并大获成功。\n一来二去，新人p主在初期音乐制作水准不高时的模仿对象整体都转向了反乌；观众爱听，新人爱做，成本低效率高，自然滚成了雪球。",
+          "sourceUrl": "https://www.zhihu.com/question/1911850468486914809/answer/1938427706539750301?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+        }
+      ],
+      "frequencyTextId": "search-03.json:1938427706539750301"
+    },
+    {
+      "id": "s6",
+      "title": "如何评价b站up主Utopia_乌托邦P制作的音乐《反乌托邦》?",
+      "author": "C6H4Cl2",
+      "type": "answer",
+      "url": "https://www.zhihu.com/question/15570446264/answer/1955678038642652741?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+      "scope": "单曲解读",
+      "intro": "补充不同阅读方法的真实回答。",
+      "retrievedAt": "2026-09-14T10:46:05.511Z",
+      "coverage": "搜索摘录，非全文",
+      "frequencyTextId": "supplement:s6",
+      "texts": [
+        {
+          "id": "supplement:s6",
+          "method": "search zhihu",
+          "retrievedAt": "2026-09-14T10:46:05.511Z",
+          "coverage": "搜索 ContentText 摘录，非全文",
+          "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1955678038642652741?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "text": "歪个楼，我不懂那些技术性的东西，所以只能说点我自己对他曲子的个人亲身感受，虽然可能有点让人比较难理解。\n我受日V茶毒甚深，一般听歌不怎么看词——因为看不懂，把自己越是沉在音乐的律动里越好。但这也使得我对某些曲子的感受和联想异于他人，有时甚至南辕北辙、没人看懂。当然这也与我的感官问题有关，我很难指望自己一团浆糊、高度复合的感官能让我好好组织语言。一首歌在我脑中，有颜色（真的），有画面，有浆糊一般的不断联想……此时再加上歌词联想这一块，那信息量未免过高了。\n他的曲子给我种颇为奇怪的感觉：很 vibrant，很“城市化”，但又有所“错位”。从《未完成秋天》《反乌托邦》到现在《完美的真空》都有这种感觉。像是在广州、香港甚至吉隆坡，而不是他拍 PV 所在的安康。唯独他的初作《追寻》不是——那个太经典中术小P主风格了，而且编排还挺像Orangestar，在我脑中反而太好归类。\n头一回听《反乌托邦》，我便感到了一种明显的错位。曲子是那种非常 vibrant、奔流的感觉（诚然有些塑料），词和 PV 却是“反乌托邦”——光从曲调来看，这曲子似乎也不太 dystopia，反而像躁动的大城。虽说以乐景衬哀情是文学常有的修辞法，但奔流的曲却配上有些压抑的词和城中村里的 PV，门锁、楼道和铁网不断出现的画面，我脑中错位的感觉反而上来了。后面听他的其它曲子，这种错位感倒延续了下来。\n上个月去了一趟马来西亚旅游，坐 Grab 坐了个饱，也因此有了在前座看风景的绝佳机会。此时我便发现了使他曲子不错位的方法：在 Grab 司机飙车时点开他的曲子，看着前面的风景，那种 vibrant 感反而就此有了立足之地。\n乌托邦P在 PV 里常用一种移形换影的快闪法，把几种画面放到一起来快放，常用在曲子里吉他或者合成器弹出旋律的时候。但我在看这种表现方法时反而也感觉到了错位。细究起来发现，他快闪时以音符为单位，我直觉里却觉得应该以敲镲为单位，怪不得了。\n而对于连续编排的音符，我反而觉得长镜头好于快闪；可能是因为我理解里觉得一段音符是一段，而不是单个可拆的东西吧。\n结果就是那种 vibrant 的调子，在 Grab 上看着风景听，在我脑中效果反而好于他的 PV。\n《落花后日谈》就是我在从槟城去峇都丁宜的路上听的，一段 dynamic 的合成器像是大珠小珠落玉盘，而 Grab 司机飙着车，经过香港岛般曲折的高架山路，周围一片青绿，再配上机关枪似的歌唱，不需要听词是什么意义，那种冲击感是无以复加的。"
+        }
+      ]
+    }
+  ],
+  "analyses": [
+    {
+      "sourceId": "s1",
+      "keywordId": "imitation",
+      "status": "sufficient",
+      "summary": "曾计划批评创作同质化；重拾文章时，转向反思自己也在参与“复读”。",
+      "quote": "整理思路时，忽然意识到：这样的自己何尝不是在参与某种形式的“复读”？",
+      "context": "前文的“为流量迷眼”等是作者回顾当时想写的批评；后文明确写出心境变化。不能将旧批评当作全文结论。",
+      "voice": "回顾过去立场后反思",
+      "evidenceTextId": "search-02.json:1974950787324085589",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/1974950787324085589?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "visibility",
+      "status": "sufficient",
+      "summary": "自己发布长文后，也会从阅读和赞同中获得被认同感。",
+      "quote": "技术力低下，闲暇时间少的我选择用文字去“被看见”。",
+      "context": "作者正在叙述自己的文字创作经验，以此重新理解创作心境；不是对每位 P 主动机的断言。",
+      "voice": "作者自述",
+      "evidenceTextId": "search-02.json:1974950787324085589",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/1974950787324085589?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "traffic",
+      "status": "sufficient",
+      "summary": "写作中的曝光经验，使作者重新审视自己对追逐流量的批评。",
+      "quote": "为了增加曝光，我也曾探究过一些脱离于创作本身之外的盘外招",
+      "context": "此处说的是作者自己发长文的经验。前文对 P 主追逐流量的批评属于回顾，不能混成作者最终判断。",
+      "voice": "作者自述与反思",
+      "evidenceTextId": "search-02.json:1974950787324085589",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/1974950787324085589?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "resonance",
+      "status": "insufficient",
+      "summary": "提出心灵冲击与流量刺激两种可能，摘录没有确定相似创作由何者驱动。",
+      "quote": "不知是否是歌中“反乌托邦”“拯救我自己”“活下去”等词语带来的心灵冲击",
+      "context": "这是一个未定的提问，后半句还提出“流量刺激”。现有文字不足以判断实际成因；标题中的问题也不等于作者结论。",
+      "voice": "作者提出疑问",
+      "evidenceTextId": "search-02.json:1974950787324085589",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/1974950787324085589?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "resonance",
+      "status": "sufficient",
+      "summary": "将歌曲的吸引力与学业压力下听众的心理需求联系起来。",
+      "quote": "平白如话的现实填词、朴实无华的向上内核相当契合了现代大量囿于学业压力的青少年的心理状况",
+      "context": "这是作者对传播与受众的解释，未独立核验，也不能据此推断所有听众的年龄和经历。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-01.json:1905309411175532240",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "craft",
+      "status": "sufficient",
+      "summary": "指出作曲、编曲的不足，同时认为有缺陷的表达也可能契合受众。",
+      "quote": "这首歌确实有缺陷：作曲简略，编曲单薄，似乎还有些“自作多情”；不过，谁没有“自作多情”过呢？",
+      "context": "接下来的文字以其他作品为例，讨论表达与受众心理的契合。技术批评与共鸣判断并存，不宜压成支持或反对。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-01.json:1905309411175532240",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "realism",
+      "status": "sufficient",
+      "summary": "把现实题材视作部分新生代 P 主可以持续发展的创作方向。",
+      "quote": "现实主义化对于泛中术P主（尤其是2022年后开始活跃的「新生代」P主）而言更像是一条可持续的道路",
+      "context": "回答将《反乌托邦》放入一组现实题材作品中比较。这是作者的生态判断，不是行业趋势的独立验证。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-01.json:1905309411175532240",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "imitation",
+      "status": "sufficient",
+      "summary": "观察到以这首歌为范本的创作，作为现实题材延续的例子。",
+      "quote": "今年2月起以《反乌托邦》为范本的“邦式术曲”蔚然成风即是一大例证。",
+      "context": "原文中的“今年”按作者写作语境理解，不换算成检索年份 2026；这段没有将所有模仿直接等同于负面同质化。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-01.json:1905309411175532240",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "traffic",
+      "status": "sufficient",
+      "summary": "用内容契合与平台推流共同解释走红，而非只看音乐技术。",
+      "quote": "几个因素共同将《反乌托邦》推上了泛中术圈内不可忽视的位置。",
+      "context": "“几个因素”承接前文的 PV、现实填词、向上内核、受众心理与 B 站推流。对推流原因及买量的说法没有独立核实，不能当作平台事实。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-01.json:1905309411175532240",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "resonance",
+      "status": "sufficient",
+      "summary": "把歌词与自己曾用诗安慰朋友的经历联系起来。",
+      "quote": "拿了一张纸条写了一首诗给她",
+      "context": "作者回顾高中运动会时写诗安慰朋友，后来发现对方将诗写进周记；这是作者自述的个人联想，不代表听众共同经历。",
+      "voice": "作者自述",
+      "evidenceTextId": "search-03.json:130032848690",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/130032848690?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "rescue",
+      "status": "sufficient",
+      "summary": "把歌曲读作寻找属于自己的希望与答案。",
+      "quote": "希望你自救，自己找到属于自己的答案。",
+      "context": "这句话位于作者对“光明与黑暗”的主观解读中。不能据此宣称歌曲确实产生了治疗或救助效果。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:130032848690",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/130032848690?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "imagery",
+      "status": "sufficient",
+      "summary": "用“光”解释个人答案：看似光明的事物并不一定适合每个人。",
+      "quote": "眼前的光明并非真的和善，眼前的黑暗也并非完全冰冷",
+      "context": "这是回答作者对歌词的解释，不是对歌曲创作者意图的核实。摘录结尾进一步强调寻找属于自己的答案。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:130032848690",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/130032848690?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "craft",
+      "status": "insufficient",
+      "summary": "现有文本不足以判断。",
+      "quote": null,
+      "context": "搜索摘录主要覆盖主观感受和歌词解读；另有服务端摘要提及编曲，但没有足够的原文段落支撑对其音乐评价的完整概括。",
+      "voice": "覆盖范围有限",
+      "evidenceTextId": "search-03.json:130032848690",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/130032848690?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s4",
+      "keywordId": "imagery",
+      "status": "sufficient",
+      "summary": "将意象的拼凑读作崩坏与表达受阻带来的暴力感。",
+      "quote": "但是这些意向的拼凑表达出来了一种暴力感",
+      "context": "前文枚举愿望、粉末、心灵、门锁等意象；后文转向话语权被剥夺的解释。保留原文“意向”的用字，这是该回答的解释路径。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-01.json:129824390472",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/129824390472?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s4",
+      "keywordId": "rescue",
+      "status": "sufficient",
+      "summary": "把“自由”的渴望放进主体性创伤的解释框架。",
+      "quote": "因为我的话语权被剥夺了，我想要说，但是又没法说",
+      "context": "此处的“我”是作者在阐释歌词中的主体，不能当作回答作者本人的经历或心理状态。后文引用理论术语，现有摘录不用于判定理论解释正确与否。",
+      "voice": "作者对歌词主体的解读",
+      "evidenceTextId": "search-01.json:129824390472",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/129824390472?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s5",
+      "keywordId": "craft",
+      "status": "sufficient",
+      "summary": "从制作角度批评技术细节，同时认为题材与易理解的词曲能吸引听众。",
+      "quote": "青春伤痛的主题和平实（理解门槛低）的词曲足以让一拥而入的听众忽略这些细节",
+      "context": "“这些细节”承接作者对吉他 MIDI 音色、编混和歌声处理的批评。这是作者的技术评价及受众解释，并非听众调查。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:1938427706539750301",
+      "sourceUrl": "https://www.zhihu.com/question/1911850468486914809/answer/1938427706539750301?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s5",
+      "keywordId": "resonance",
+      "status": "sufficient",
+      "summary": "认为青春题材和平实词曲的吸引力，可能压过部分制作细节。",
+      "quote": "轻编曲混音制作、重歌词情感主题",
+      "context": "这句话是作者概括当时曲风的观察；随后以《反乌托邦》为典型例子展开，不能当成全部中 V 作品的属性。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:1938427706539750301",
+      "sourceUrl": "https://www.zhihu.com/question/1911850468486914809/answer/1938427706539750301?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s5",
+      "keywordId": "realism",
+      "status": "sufficient",
+      "summary": "将歌曲放在青春主题创作热潮中，强调内容重心与制作选择。",
+      "quote": "“当前”的中v，版本答案就毫无疑问是“XXXX原创摇滚”+青春主题。",
+      "context": "“当前”属于原作者写作时的判断，不表示检索日的圈层现状；这是一篇创作生态回答，单曲在文中充当例子。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:1938427706539750301",
+      "sourceUrl": "https://www.zhihu.com/question/1911850468486914809/answer/1938427706539750301?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s5",
+      "keywordId": "imitation",
+      "status": "sufficient",
+      "summary": "用观众偏好、新人模仿和较低制作成本解释相似曲风的扩散。",
+      "quote": "观众爱听，新人爱做，成本低效率高，自然滚成了雪球。",
+      "context": "前文明确说新人 P 主的模仿对象转向《反乌托邦》。这是作者提出的形成机制，未将其作为经过统计验证的因果关系。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:1938427706539750301",
+      "sourceUrl": "https://www.zhihu.com/question/1911850468486914809/answer/1938427706539750301?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s5",
+      "keywordId": "traffic",
+      "status": "sufficient",
+      "summary": "认为歌曲的走红带动模仿，听众的响应又继续推动传播。",
+      "quote": "反乌的爆火也带动了众多年轻p主在曲风（包括制作方法）、画面上的效仿并大获成功。",
+      "context": "前文还提及算法青睐与听众助力推流。全部属于作者的解释，不代表已获得平台流量数据。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:1938427706539750301",
+      "sourceUrl": "https://www.zhihu.com/question/1911850468486914809/answer/1938427706539750301?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "pressure",
+      "status": "sufficient",
+      "summary": "作者将歌曲的吸引力部分归因于它契合受学业压力困扰的青少年。",
+      "quote": "相当契合了现代大量囿于学业压力的青少年的心理状况（尤其是中学生）",
+      "context": "这是回答作者对受众的解释，未经独立人群调查，不能推定所有听众都有相同经历。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:1905309411175532240",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s2",
+      "keywordId": "video",
+      "status": "sufficient",
+      "summary": "作者把朴素的影像、直白填词和向上内核一起看作歌曲触达听众的因素。",
+      "quote": "手持摄像的廉价pv、平白如话的现实填词、朴实无华的向上内核",
+      "context": "“廉价”是原作者措辞，歌墙概括为朴素影像；不提供未核验的制作成本。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:1905309411175532240",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1905309411175532240?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "comfort",
+      "status": "sufficient",
+      "summary": "作者用自己曾写诗安慰朋友的经历，解释对歌曲中以文字帮助他人的感受。",
+      "quote": "拿了一张纸条写了一首诗给她（那篇诗的原文我暂时不知道了），算是安慰她",
+      "context": "这是回答作者明确自述的经历，不能当作歌曲作者的创作经历。",
+      "voice": "作者自述",
+      "evidenceTextId": "search-03.json:130032848690",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/130032848690?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s3",
+      "keywordId": "light",
+      "status": "sufficient",
+      "summary": "作者不把光与暗简单视作善恶两端，强调要找到属于自己的答案。",
+      "quote": "眼前的光明并非真的和善，眼前的黑暗也并非完全冰冷",
+      "context": "这是其对歌词意象的解释；不推定为歌曲作者唯一意图。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:130032848690",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/130032848690?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s4",
+      "keywordId": "expression",
+      "status": "sufficient",
+      "summary": "作者以话语权受限来理解歌词主体的表达困境。",
+      "quote": "因为我的话语权被剥夺了，我想要说，但是又没法说",
+      "context": "原文这里的“我”是作者在理论化解读中代入的歌词主体，不当作回答作者的个人遭遇。",
+      "voice": "歌词主体解读",
+      "evidenceTextId": "search-03.json:129824390472",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/129824390472?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s1",
+      "keywordId": "reflection",
+      "status": "sufficient",
+      "summary": "作者自己开始写作后，重新审视了先前批评其他创作者的心境。",
+      "quote": "从创作者视角看创作心境十分不同。",
+      "context": "同篇明确写出不再急于指责，并反问自己是否也在复读；不能将其旧批评当作最终立场。",
+      "voice": "回顾过去立场后反思",
+      "evidenceTextId": "search-02.json:1974950787324085589",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/1974950787324085589?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s5",
+      "keywordId": "cost",
+      "status": "sufficient",
+      "summary": "作者把低成本、易于制作与受众偏好联系起来，解释模仿扩散。",
+      "quote": "观众爱听，新人爱做，成本低效率高，自然滚成了雪球。",
+      "context": "这是创作生态回答的解释模型，不是对每位新人创作者动机的核实。",
+      "voice": "作者当前表达",
+      "evidenceTextId": "search-03.json:1938427706539750301",
+      "sourceUrl": "https://www.zhihu.com/question/1911850468486914809/answer/1938427706539750301?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s6",
+      "keywordId": "production",
+      "quote": "头一回听《反乌托邦》，我便感到了一种明显的错位。",
+      "summary": "作者初听时感到曲调、歌词与 PV 之间存在错位。",
+      "context": "下文把奔流的曲调与压抑的词、城中村影像并置；属于个人听觉联想，不是制作错误的判定。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "evidenceTextId": "supplement:s6",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1955678038642652741?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s6",
+      "keywordId": "video",
+      "quote": "而对于连续编排的音符，我反而觉得长镜头好于快闪；",
+      "summary": "作者偏好用长镜头呈现连续音符，而非逐音符快闪。",
+      "context": "这是从本曲延伸到该 P 主若干作品 PV 的个人节奏偏好，不能当作剪辑的普遍规则。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "evidenceTextId": "supplement:s6",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1955678038642652741?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    },
+    {
+      "sourceId": "s6",
+      "keywordId": "imagery",
+      "quote": "门锁、楼道和铁网不断出现的画面，我脑中错位的感觉反而上来了。",
+      "summary": "作者将门锁、楼道与铁网的视觉意象同曲调联想并读。",
+      "context": "这些是该答主对 PV 画面的描述，歌墙没有声称独立逐帧核实视频。",
+      "voice": "作者当前表达",
+      "status": "sufficient",
+      "evidenceTextId": "supplement:s6",
+      "sourceUrl": "https://www.zhihu.com/question/15570446264/answer/1955678038642652741?utm_medium=openapi_platform&utm_source=cf621feb3f2d"
+    }
+  ]
+}
