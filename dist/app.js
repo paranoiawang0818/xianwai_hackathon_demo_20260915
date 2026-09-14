@@ -15,7 +15,8 @@ const keyword = id => data.keywords.find(k => k.id === id);
 const source = id => data.sources.find(s => s.id === id);
 const analysis = (sid,kid) => data.analyses.find(a => a.sourceId === sid && a.keywordId === kid);
 const related = kid => data.analyses.filter(a => a.keywordId === kid);
-const isCompare = () => location.hash === '#compare' && selected.length >= 2;
+const analysisPending = () => ['extractive','pending'].includes(data?.analysisMode);
+const isCompare = () => !analysisPending() && location.hash === '#compare' && selected.length >= 2;
 const avatar = s => `<span class="avatar" aria-hidden="true">${escape(s.author.slice(0,1))}</span>`;
 const sourceLink = s => `<a class="external" href="${escape(s.url)}" target="_blank" rel="noopener noreferrer" aria-label="查看知乎原文：${escape(s.author)}的${s.type==='article'?'文章':'回答'}">查看知乎原文 ↗</a>`;
 const quoteHTML = a => a.quote ? `<blockquote class="quote"><span class="quote-label">原文短摘录</span><p>${escape(a.quote)}</p></blockquote>` : '';
@@ -31,7 +32,7 @@ function resetSearchSession(){
  save();
 }
 function toggle(id) {
-  if (!keyword(id)) return;
+  if (analysisPending() || !keyword(id)) return;
   const adding=!selected.includes(id);
   if (selected.includes(id)) selected = selected.filter(k => k !== id);
   else if (selected.length === 5) { announce('最多选择 5 个关键词，请先移除一个再添加。'); return; }
@@ -41,7 +42,7 @@ function toggle(id) {
   document.querySelectorAll('.keyword').forEach(el => el.classList.toggle('selected',selected.includes(el.dataset.keyword)));
   if(isCompare()) render();
 }
-function goCompare() { if(selected.length<2){announce('至少选择 2 个关键词才能比较。');return;} location.hash='compare'; }
+function goCompare() { if(analysisPending()){announce('观点分析尚未完成，请先阅读来源或重新分析。');return;} if(selected.length<2){announce('至少选择 2 个关键词才能比较。');return;} location.hash='compare'; }
 function setActive(id,origin) {
   if(!keyword(id)) return; active=id; save(); renderDetail(); wordOrigin=origin;
   document.querySelectorAll('.keyword').forEach(el => el.classList.toggle('active',el.dataset.keyword===id));
@@ -55,7 +56,7 @@ function normalizeQuery(value){return String(value).normalize('NFKC').toLowerCas
 function localMatches(query){const needle=normalizeQuery(query);return catalog.filter(song=>[song.title,song.creator,song.title+' '+song.creator,...(song.aliases||[]),...(datasets.get(song.id)?.keywords.map(k=>k.label)||[])].some(v=>normalizeQuery(v).includes(needle)));}
 function artTone(song){return song.id==='dystopia'?'blue':song.presetId==='i-love-u'||song.title==='I LOVE U'?'rose':song.presetId==='baishixi'||song.title==='白石溪'?'sage':['blue','rose','sage'][String(song.id).length%3];}
 function recordArt(tone,extra=''){return `<span class="record-art tone-${tone} ${extra}" aria-hidden="true"><span class="art-grid"></span><span class="art-orbit"></span><span class="art-disc"><span class="disc-label"><i></i></span></span><span class="art-line"></span><span class="art-caption">MUSIC / WORDS</span></span>`;}
-function resultCard(song){return `<button class="song-result" data-open-song="${escape(song.id)}" aria-label="${song.status==='ready'?'进入':'检索'}${escape(song.title)}关键词歌墙">${recordArt(artTone(song))}<span class="result-info"><span class="result-type"><i aria-hidden="true"></i>${song.status==='ready'?'已整理 · 可直接阅读':'预设歌曲 · 等待整理'}</span><strong>${escape(song.title)}</strong><span class="result-author">${escape(song.creator||'按输入主题检索')}</span><span class="result-stats">${song.status==='ready'?`${song.sourceCount} 篇知乎文章与回答 · ${song.keywordCount} 个角度`:'尚未取得足够的知乎讨论，不预填观点'}</span></span><span class="result-action">${song.status==='ready'?'走进这面歌墙':'检索这首歌'} <b aria-hidden="true">↗</b></span></button>`;}
+function resultCard(song){const pending=song.status==='needs_analysis';return `<button class="song-result" data-open-song="${escape(song.id)}" aria-label="${pending?'查看来源：':song.status==='ready'?'进入':'检索'}${escape(song.title)}${pending?'':'关键词歌墙'}">${recordArt(artTone(song))}<span class="result-info"><span class="result-type"><i aria-hidden="true"></i>${pending?'已找到来源 · 分析未完成':song.status==='ready'?'已整理 · 可直接阅读':'预设歌曲 · 等待整理'}</span><strong>${escape(song.title)}</strong><span class="result-author">${escape(song.creator||'按输入主题检索')}</span><span class="result-stats">${pending?`${song.sourceCount} 篇候选内容 · 可阅读原文或重新分析`:song.status==='ready'?`${song.sourceCount} 篇知乎文章与回答 · ${song.keywordCount} 个角度`:'尚未取得足够的知乎讨论，不预填观点'}</span></span><span class="result-action">${pending?'查看来源与重试':song.status==='ready'?'走进这面歌墙':'检索这首歌'} <b aria-hidden="true">↗</b></span></button>`;}
 const reducedMotion=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const loadingWave=()=>'<span class="loading-wave" aria-hidden="true">'+Array.from({length:9},(_,i)=>`<i style="--beat:${i}"></i>`).join('')+'</span>';
 function beginLoading(query,details={}){
@@ -83,18 +84,18 @@ function renderSearchResult(){
  target.innerHTML=`<div class="result-meta">${songs.length} 个结果 <span>原文与讨论来自知乎</span></div><div class="preset-list">${songs.map(resultCard).join('')}</div><button class="search-more" data-live-search>继续检索知乎中的「${escape(q)}」 →</button><p class="search-result-note">预设只是起点。其他歌曲按需检索，材料足够时生成歌墙并缓存。</p>`;
 }
 function cancelSearch(){requestVersion++;searchController?.abort();searchController=null;searchState={status:'cancelled'};renderSearchResult();$('#song-query')?.focus();}
-async function runLiveSearch(query,presetId){
- const token=beginLoading(query,{presetId,message:'正在查找歌曲与缓存…'}),{controller,version}=token;
- const handle=async(event,value)=>{if(version!==requestVersion)return;if(event==='progress'){searchState={...searchState,...value};renderSearchResult();}if(event==='error'){searchState={status:'error',query,presetId,...value};renderSearchResult();}if(event==='complete'){
+async function runLiveSearch(query,presetId,retryOptions=searchState.retryOptions||{}){
+ const token=beginLoading(query,{presetId,retryOptions,message:retryOptions.retryAnalysis?'正在读取已有材料，准备重新分析…':'正在查找歌曲与缓存…'}),{controller,version}=token;
+ const handle=async(event,value)=>{if(version!==requestVersion)return;if(event==='progress'){searchState={...searchState,...value};renderSearchResult();}if(event==='error'){searchState={status:'error',query,presetId,retryOptions,...value};renderSearchResult();}if(event==='complete'){
   if(!await finishLoading(token))return;
   datasets.set(value.entry.id,value.dataset);const presetIndex=catalog.findIndex(s=>s.id===presetId);const existing=catalog.findIndex(s=>s.id===value.entry.id);if(presetIndex>=0)catalog[presetIndex]={...catalog[presetIndex],...value.entry};else if(existing>=0)catalog[existing]=value.entry;else catalog.push(value.entry);
   searchState={status:'done',results:[value.entry]};searchSubmitted=true;searchQuery=query;renderSearchResult();save();
  }};
- try{const response=await fetch('/api/search',{method:'POST',headers:{'Content-Type':'application/json','X-Songwall-Request':'1'},body:JSON.stringify({query,presetId}),signal:controller.signal});if(!response.ok||!response.headers.get('content-type')?.includes('text/event-stream'))throw Error('本地检索服务没有启动，请使用 npm start 启动最新版本。');
+ try{const response=await fetch('/api/search',{method:'POST',headers:{'Content-Type':'application/json','X-Songwall-Request':'1'},body:JSON.stringify({query,presetId,...retryOptions}),signal:controller.signal});if(!response.ok||!response.headers.get('content-type')?.includes('text/event-stream'))throw Error('检索服务暂时不可用，请稍后重试。');
   const reader=response.body.getReader(),decoder=new TextDecoder();let pending='';
   while(true){const {done,value}=await reader.read();if(done)break;pending+=decoder.decode(value,{stream:true});let end;while((end=pending.indexOf('\n\n'))>=0){const frame=pending.slice(0,end);pending=pending.slice(end+2);const event=frame.match(/^event: (.+)$/m)?.[1],body=frame.match(/^data: (.+)$/m)?.[1];if(event&&body)await handle(event,JSON.parse(body));}}
   if(version===requestVersion&&searchState.status==='loading')throw Error('检索连接中断，没有返回完成结果，请重试。');
- }catch(error){if(version!==requestVersion||error.name==='AbortError')return;searchState={status:'error',code:'NETWORK_ERROR',query,presetId,message:error.message};renderSearchResult();}
+ }catch(error){if(version!==requestVersion||error.name==='AbortError')return;searchState={status:'error',code:'NETWORK_ERROR',query,presetId,retryOptions,message:error.message};renderSearchResult();}
  finally{if(version===requestVersion)searchController=null;}
 }
 async function submitSearch(query){
@@ -107,7 +108,7 @@ async function submitSearch(query){
 }
 async function openSong(id){
  const song=catalog.find(s=>s.id===id);if(!song)return;
- if(song.status!=='ready'){searchQuery=song.title;$('#song-query').value=song.title;searchSubmitted=true;runLiveSearch(song.title,song.id);return;}
+ if(!['ready','needs_analysis'].includes(song.status)){searchQuery=song.title;$('#song-query').value=song.title;searchSubmitted=true;runLiveSearch(song.title,song.id);return;}
  const token=beginLoading(song.title,{mode:'wall',openId:id,message:'正在展开关键词与原文证据…'});
  try{
   let next=datasets.get(id);
@@ -132,7 +133,13 @@ function frequencyDetails(k){
  const f=k.frequency, counts=f.patterns.map(term=>({term,count:f.matches.filter(m=>m.term===term).length})).filter(x=>x.count);
  return `<details class="frequency-details"><summary>出现 ${f.count} 次 · 覆盖 ${f.sourceCount} 篇 · 查看统计口径</summary><p>关键词是归纳标签，次数按对应词语在已收录摘录中的字面匹配统计：${counts.map(x=>`<span>${escape(x.term)} × ${x.count}</span>`).join('、')}。</p><p>每篇只选一份搜索摘录，重复检索不累加；含作者转引歌词与回顾旧立场的提及，不含评论。次数不代表观点赞同、全文词频或全网热度。</p></details>`;
 }
+function renderPendingAnalysis(){
+ selected=[];selection.innerHTML='';
+ main.innerHTML=`<div class="page"><div class="wall-breadcrumb"><a href="#search">← 返回搜索</a><span>${escape(data.song.title)} / 已找到的来源</span></div><section class="song-strip"><div><div class="eyebrow">来源已保留</div><h1>${escape(data.song.title)}</h1><p>${escape(data.song.creator||'知乎中的歌曲讨论')}</p></div></section><section class="search-no-result" role="status"><h2>找到了内容，观点分析尚未完成</h2><p>${escape(data.analysisNotice||'知乎直答本次未完成分析。你可以先阅读来源，稍后重新分析已有材料。')}</p><div class="search-error-actions"><button class="small-button" id="retry-analysis">重新分析已有材料</button><a class="text-button" href="#search">返回搜索</a></div><p>本次重试不重复搜索；只调用知乎直答整理已取得的摘录。分析通过后再生成关键词和对照阅读。</p>${data.analysisIssue?`<details><summary>查看本次状态</summary><p>${escape(data.analysisIssue.code)} · ${escape(data.analysisIssue.checkedAt)}</p></details>`:''}</section><section class="source-list" aria-label="已找到的候选来源">${data.sources.map(s=>`<article class="source-card"><div class="author-line">${avatar(s)}<span>${escape(s.author)}</span><span class="type">${s.type==='article'?'文章':'回答'}</span></div><h3>${escape(s.title)}</h3><p>候选来源，观点与语境尚待整理。</p><span class="scope">${escape(s.coverage)}</span><div class="source-actions">${sourceLink(s)}</div></article>`).join('')}</section>${notes()}</div>`;
+ $('#retry-analysis').addEventListener('click',()=>{const query=data.song.query||data.song.title,options={retryAnalysis:true,songId:currentSongId};searchQuery=query;searchSubmitted=true;history.pushState(null,'','#search');render();runLiveSearch(query,undefined,options);});
+}
 function renderWall() {
+  if(analysisPending()){renderPendingAnalysis();return;}
   main.innerHTML=`<div class="page wall-page"><div class="wall-breadcrumb"><a href="#search">← 返回搜索</a><span>搜索 / ${escape(data.song.title)} / 关键词歌墙</span></div><section class="song-strip" aria-labelledby="song-title"><div><div class="eyebrow">${currentSongId==='dystopia'?'已整理歌墙':'歌曲阅读'}</div><h1 id="song-title">${escape(data.song.title)}</h1><p>${escape(data.song.creator||'按输入主题检索')} <span class="sep">/</span> ${data.analysisMode==='extractive'?'原句预览 · 观点待核验':'知乎中的歌曲讨论'}</p></div><div class="song-context"><span class="tiny-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><p>${data.sources.length} 篇知乎文章与回答 <span class="sep">·</span> ${data.keywords.length} 个探索角度<br><span>基于搜索摘录，非全文</span></p></div></section><section class="word-wall" aria-label="关键词歌墙"><div class="word-wall-heading"><h2>关键词歌墙</h2><p>点击一个词，读一读它背后的表达。</p><span>选择 2–5 个词进行比较</span></div><div class="word-canvas ${data.keywords.length>8||currentSongId!=='dystopia'?'auto-layout':''}" aria-label="彩色关键词墙">${data.keywords.map((k,i)=>`<button class="keyword wall-word word-${['resonance','craft','imagery','rescue','realism','imitation','visibility','traffic'][i%8]} ${selected.includes(k.id)?'selected':''}" style="${wordSizing(k)};--word-color:${['#2563cb','#37856c','#a06c20','#6772b7','#ad5876','#8254a7','#377f8c','#a86443','#426694','#657b32','#9b5362','#357a75','#6c5bb0','#966333','#a14878','#44769b'][i%16]}" data-keyword="${k.id}" data-view="${k.id}" aria-label="查看关键词：${escape(k.label)}" aria-haspopup="dialog" aria-pressed="false" title="${escape(k.label)} · 出现 ${k.frequency.count} 次 · ${related(k.id).length} 篇相关内容"><span class="word-label">${escape(k.label)}</span><sup class="word-frequency" aria-hidden="true">${k.frequency.count}</sup><span class="word-check" aria-hidden="true">✓</span></button>`).join('')}</div><div class="word-wall-footer"><span>每个词，都是一种读法。</span><p>字号越大，对应表达在已收录摘录中出现越多。右上角为次数，详情可查看统计口径。</p></div></section>${notes()}</div>`;
   document.querySelectorAll('.wall-word').forEach((el,i)=>el.style.setProperty('--word-delay',Math.min(i*22,330)+'ms'));
   const invitation=document.createElement('aside');invitation.className='wall-invitation';invitation.innerHTML='<span class="detail-kicker">READING ROOM / 阅读角落</span><div class="invitation-glyph" aria-hidden="true">“</div><h2>哪个词，<br>让你想多读一点？</h2><p>点击墙上的词语，在这里读它背后的表达。</p><div class="invitation-steps"><span>01　读原句，看看不同的理解</span><span>02　留下 2–5 个好奇的角度</span><span>03　把具体文章放在一起对照</span></div><small>每个观点都有出处，每段文字都有语境。</small>';
@@ -144,7 +151,7 @@ function renderDetail() {
   $('#word-detail').innerHTML=`<div class="detail-header"><button class="close-button close-word" aria-label="关闭关键词详情" data-close-word>×</button><div class="detail-kicker">正在查看 / KEYWORD</div><div class="detail-title-row"><h2 id="word-title">${escape(k.label)}</h2><button class="small-button" data-add="${k.id}" aria-label="${selected.includes(k.id)?'移除对比词':'加入对比'}：${escape(k.label)}" aria-pressed="${selected.includes(k.id)}">${selected.includes(k.id)?'✓ 已加入 · 移除':'+ 加入对比'}</button></div><p>${entries.length} 篇相关内容 · 原句与 ${data.analysisMode==='extractive'?'自动截取说明':'AI 概括'}分开阅读</p>${frequencyDetails(k)}<p class="selection-feedback" id="word-selection-message" role="status" aria-live="polite">已选 ${selected.length} / 5 个关键词</p></div><div class="source-list" tabindex="0" aria-label="${escape(k.label)}的相关来源，可滚动阅读">${entries.map(a=>{const s=source(a.sourceId);return `<article class="source-card"><div class="author-line">${avatar(s)}<span>${escape(s.author)}</span><span class="type">${s.type==='article'?'文章':'回答'}</span></div><h3>${escape(s.title)}</h3><span class="scope">${s.scope} · ${s.coverage}</span>${a.status==='insufficient'?'<div><span class="warning-label">证据不足 · 保留判断</span></div>':''}${quoteHTML(a)}${aiHTML(a)}<div class="source-actions"><button class="text-button" data-evidence="${s.id}:${k.id}">查看上下文</button>${sourceLink(s)}</div></article>`}).join('')}</div>`;
 }
 function renderSelection(addedId) {
-  if(isCompare()||isSearch()){selection.innerHTML='';return;}
+  if(isCompare()||isSearch()||analysisPending()){selection.innerHTML='';return;}
   selection.innerHTML=`<section class="selection-bar" aria-label="已选关键词"><div class="selection-inner"><div class="selection-label">已选关键词 <strong aria-live="polite">${selected.length}<span style="font-size:12px;color:#8a9ab0"> / 5</span></strong><small>至少 2 个即可开始比较</small></div><div class="selected-chips">${selected.length?selected.map(id=>`<button class="selected-chip" data-remove="${id}" aria-label="取消选择：${escape(keyword(id).label)}">${escape(keyword(id).label)}<span aria-hidden="true">×</span></button>`).join(''):'<span class="selection-empty">把好奇的角度，放到这里。</span>'}</div><button class="primary" id="compare-button" ${selected.length<2?'disabled':''}>${selected.length<2?`再选 ${2-selected.length} 个词开始比较`:'进入对比墙 →'}</button></div></section>`;
   selection.querySelectorAll('[data-remove]').forEach(el=>el.style.setProperty('--chip-color',wordColor(el.dataset.remove)));
   if(addedId)selection.querySelector(`[data-remove="${CSS.escape(addedId)}"]`)?.classList.add('just-added');
@@ -210,7 +217,7 @@ window.addEventListener('hashchange',()=>{if(!data)return;if(!isSearch()&&search
 async function init(){const started=performance.now();try{
  const response=await fetch('data/demo.json');if(!response.ok)throw Error('data');data=await response.json();data.song.id='dystopia';datasets.set('dystopia',data);
  const catalogResponse=await fetch('/api/catalog');if(!catalogResponse.ok)throw Error('service');const info=await catalogResponse.json();catalog=info.songs;availability=info.availability||{};
- try{const restored=!isSearch()&&JSON.parse(sessionStorage.getItem('songwall-state-v2'));if(restored){Object.assign(songSelections,restored.songSelections||{});if(catalog.some(s=>s.id===restored.currentSongId&&s.status==='ready')){const id=restored.currentSongId;if(!datasets.has(id)){const r=await fetch('/api/songs/'+id);if(r.ok)datasets.set(id,await r.json());}if(datasets.has(id)){currentSongId=id;data=datasets.get(id);}}}}catch{}
+ try{const restored=!isSearch()&&JSON.parse(sessionStorage.getItem('songwall-state-v2'));if(restored){Object.assign(songSelections,restored.songSelections||{});if(catalog.some(s=>s.id===restored.currentSongId&&['ready','needs_analysis'].includes(s.status))){const id=restored.currentSongId;if(!datasets.has(id)){const r=await fetch('/api/songs/'+id);if(r.ok)datasets.set(id,await r.json());}if(datasets.has(id)){currentSongId=id;data=datasets.get(id);}}}}catch{}
  const state=songSelections[currentSongId];selected=(state?.selected||[]).filter(k=>data.keywords.some(word=>word.id===k)).slice(0,5);active=data.keywords.some(k=>k.id===state?.active)?state.active:data.keywords[0]?.id;
  if(isSearch())resetSearchSession();
  if(location.hash==='#compare'&&selected.length<2)history.replaceState(null,'','#wall');if(!reducedMotion())await new Promise(resolve=>setTimeout(resolve,Math.max(0,450-(performance.now()-started))));render();
