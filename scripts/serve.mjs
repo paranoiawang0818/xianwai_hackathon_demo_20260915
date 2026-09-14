@@ -8,12 +8,18 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8',
 const json=(res,status,data)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
 async function body(req){let text='';for await(const chunk of req){text+=chunk;if(text.length>4096)throw Error('请求过长');}return JSON.parse(text);}
 const server=http.createServer(async(req,res)=>{try{
- const host=req.headers.host;if(![`127.0.0.1:${port}`,`localhost:${port}`].includes(host)){json(res,403,{error:'仅允许本机访问'});return;}
+  const host=req.headers.host;
+ const allowedHosts=[`127.0.0.1:${port}`,`localhost:${port}`,process.env.RENDER_EXTERNAL_HOSTNAME].filter(Boolean);
+ if(!allowedHosts.includes(host)){json(res,403,{error:'访问域名不受支持'});return;}
  const url=new URL(req.url,'http://'+host),pathname=decodeURIComponent(url.pathname);
  if(pathname==='/api/catalog'&&req.method==='GET'){json(res,200,await service.getCatalog());return;}
  if(pathname.startsWith('/api/songs/')&&req.method==='GET'){const id=pathname.slice(11);if(!/^(dystopia|song-[a-f0-9]{16})$/.test(id)){json(res,404,{error:'尚未整理该歌曲'});return;}const song=await service.getSong(id);json(res,song?200:404,song||{error:'尚未整理该歌曲'});return;}
  if(pathname==='/api/search'&&req.method==='POST'){
-  const origin=req.headers.origin;if((origin&&origin!=='http://'+host)||req.headers['x-songwall-request']!=='1'||!req.headers['content-type']?.startsWith('application/json')){json(res,403,{error:'请从歌墙页面发起检索'});return;}
+    const origin=req.headers.origin;
+  const expectedOrigin=process.env.RENDER_EXTERNAL_URL || 'http://'+host;
+  if((origin&&origin!==expectedOrigin)||req.headers['x-songwall-request']!=='1'||!req.headers['content-type']?.startsWith('application/json')){
+   json(res,403,{error:'请从弦外页面发起检索'});return;
+  }
   let input;try{input=await body(req);}catch{json(res,400,{error:'无效搜索请求'});return;}
   res.writeHead(200,{'Content-Type':'text/event-stream; charset=utf-8','Cache-Control':'no-cache','X-Accel-Buffering':'no','X-Content-Type-Options':'nosniff'});res.flushHeaders();
   const controller=new AbortController();res.on('close',()=>{if(!res.writableEnded)controller.abort();});const send=(event,value)=>{if(!res.destroyed&&!res.writableEnded)res.write(`event: ${event}\ndata: ${JSON.stringify(value)}\n\n`);};
@@ -26,4 +32,4 @@ const server=http.createServer(async(req,res)=>{try{
  const content=await readFile(path);res.writeHead(200,{'Content-Type':mime[extname(path)]||'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"});res.end(req.method==='HEAD'?undefined:content);
  }catch(error){if(res.headersSent)res.end();else json(res,error.code==='ENOENT'?404:500,{error:error.code==='ENOENT'?'文件不存在':'本地服务暂时无法完成请求，请重试。'});}});
 server.on('error',err=>{console.error(err.code==='EADDRINUSE'?`端口 ${port} 已被占用，请使用 PORT=4174 npm start`:err.message);process.exitCode=1;});
-server.listen(port,'127.0.0.1',()=>console.log(`歌墙已启动：http://127.0.0.1:${port}`));
+server.listen(port,process.env.RENDER ? '0.0.0.0' : '127.0.0.1',()=>console.log(`弦外已启动，端口 ${port}`));
